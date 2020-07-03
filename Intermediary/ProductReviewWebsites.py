@@ -27,14 +27,18 @@ logger.setLevel(logging.DEBUG)
 
 import gzip
 import re
-import pandas as pd
-from langdetect import detect
+
+# Input:
+movies_path = '../Data/input/schema_Movie.gz'
+
+#Output:
+moviesreviewswebsite_path = "../Data/output/moviereview_sites.txt"
 
 # +
 taxo_pattern = re.compile("<http://schema.org/Review>|<http://schema.org/Movie/review>", re.IGNORECASE)
 split_pattern = re.compile("^(_:.*)\s<(.*|http:\/\/schema\.org\/Movie\/review)>\s(<http:\/\/schema\.org\/Review>|.*)\s<(.*)>\s\.$", re.IGNORECASE)
 
-with gzip.open("schema_Movie.gz","rt") as f:
+with gzip.open(movies_path,"rt") as f:
     i = 0
     detected = 0
     skipped = 0
@@ -61,7 +65,7 @@ with gzip.open("schema_Movie.gz","rt") as f:
         obj = props[2]
         source = props[3]
         #print("source: ", source)
-        with open('moviereview_sites.txt','a') as file:
+        with open(moviesreviewswebsite_path,'a') as file:
             file.write(source + "\n")
             inserted += 1
                 
