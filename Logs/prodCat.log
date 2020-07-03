@@ -1,0 +1,1852 @@
+detected 8780830, inserted: 8780830 lines out of 4846853993; not in taxo: 4837926119
+Done processing the product/categories file
+2020-05-22 14:48:13,130 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:48:13,130 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:48:13,135 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:48:13,135 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:48:13,135 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:48:13,135 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:48:13,138 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:48:13,138 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:48:13,139 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:48:13,139 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:48:13,651 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:48:13,651 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:48:13,651 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:48:13,651 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:48:13,652 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:48:13,652 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:48:13,652 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:48:13,652 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:48:13,653 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:48:13,653 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:48:13,732 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:48:13,732 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:48:13,732 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:48:13,732 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:48:13,732 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:48:13,732 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:48:13,733 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:48:13,733 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:48:13,733 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:48:13,733 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:48:13,889 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:48:13,889 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:48:13,889 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:48:13,889 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:48:13,889 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:48:13,889 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:48:13,891 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:48:13,891 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:48:13,891 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:48:13,891 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:48:16,413 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:48:16,413 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:48:16,413 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:48:16,413 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:48:16,414 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:48:16,414 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:48:16,415 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:48:16,415 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:48:16,416 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:48:16,416 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:48:16,677 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:48:16,677 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:48:16,677 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:48:16,677 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:48:16,678 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:48:16,678 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:48:16,678 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:48:16,678 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:48:16,679 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:48:16,679 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:55:45,974 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:55:45,974 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:55:45,974 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:55:45,974 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:55:45,975 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:55:45,975 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:55:45,976 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:55:45,976 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:55:45,976 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:55:45,976 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:55:46,080 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:55:46,080 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:55:46,081 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:55:46,081 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:55:46,082 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:55:46,082 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:55:46,083 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:55:46,083 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:55:46,084 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:55:46,084 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:55:46,204 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:55:46,204 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:55:46,205 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:55:46,205 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:55:46,205 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:55:46,205 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:55:46,206 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:55:46,206 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:55:46,207 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:55:46,207 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:55:46,559 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:55:46,559 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:55:46,560 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:55:46,560 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:55:46,560 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:55:46,560 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:55:46,561 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:55:46,561 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:55:46,562 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:55:46,562 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:55:46,663 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:55:46,663 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:55:46,664 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:55:46,664 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:55:46,664 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:55:46,664 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:55:46,665 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:55:46,665 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:55:46,665 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:55:46,665 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:55:48,989 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:55:48,989 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:55:48,990 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:55:48,990 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:55:48,990 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:55:48,990 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:55:48,991 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:55:48,991 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:55:48,992 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:55:48,992 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:55:58,759 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:55:58,759 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:55:58,760 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:55:58,760 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:55:58,760 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:55:58,760 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:55:58,761 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:55:58,761 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:55:58,761 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:55:58,761 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:00,179 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:00,179 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:00,179 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:00,179 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:00,179 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:00,179 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:00,180 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:00,180 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:00,181 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:00,181 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:00,784 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:00,784 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:00,784 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:00,784 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:00,785 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:00,785 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:00,786 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:00,786 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:00,786 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:00,786 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:02,991 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:02,991 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:02,992 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:02,992 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:02,992 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:02,992 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:02,993 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:02,993 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:02,993 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:02,993 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:04,050 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:04,050 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:04,051 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:04,051 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:04,051 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:04,051 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:04,052 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:04,052 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:04,052 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:04,052 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:04,161 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:04,161 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:04,161 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:04,161 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:04,161 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:04,161 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:04,162 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:04,162 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:04,163 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:04,163 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:04,302 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:04,302 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:04,303 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:04,303 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:04,304 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:04,304 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:04,305 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:04,305 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:04,305 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:04,305 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:20,247 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:20,247 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:20,248 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:20,248 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:20,248 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:20,248 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:20,249 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:20,249 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:20,249 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:20,249 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:20,475 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:20,475 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:20,475 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:20,475 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:20,475 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:20,475 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:20,476 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:20,476 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:20,477 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:20,477 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:20,697 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:20,697 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:20,698 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:20,698 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:20,698 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:20,698 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:20,698 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:20,698 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:20,698 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:20,698 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:21,525 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:21,525 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:21,525 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:21,525 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:21,526 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:21,526 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:21,528 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:21,528 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:21,528 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:21,528 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:22,021 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:22,021 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:22,022 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:22,022 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:22,022 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:22,022 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:22,023 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:22,023 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:22,024 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:22,024 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:42,671 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:42,671 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:42,672 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:42,672 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:42,673 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:42,673 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:42,674 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:42,674 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:42,675 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:42,675 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:42,901 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:42,901 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:42,901 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:42,901 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:42,902 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:42,902 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:42,902 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:42,902 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:42,902 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:42,902 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:43,000 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:43,000 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:43,001 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:43,001 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:43,001 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:43,001 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:43,002 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:43,002 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:43,002 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:43,002 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:47,683 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:47,683 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:47,683 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:47,683 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:47,684 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:47,684 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:47,685 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:47,685 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:47,685 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:47,685 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:47,939 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:47,939 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:47,939 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:47,939 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:47,940 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:47,940 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:47,940 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:47,940 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:47,940 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:47,940 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:48,076 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:48,076 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:48,076 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:48,076 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:48,077 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:48,077 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:48,078 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:48,078 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:48,078 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:48,078 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:48,302 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:48,302 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:48,303 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:48,303 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:48,312 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:48,312 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:48,313 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:48,313 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:48,314 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:48,314 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:52,991 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:52,991 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:52,993 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:52,993 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:52,993 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:52,993 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:52,993 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:52,993 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:52,993 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:52,993 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:53,375 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:53,375 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:53,375 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:53,375 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:53,376 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:53,376 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:53,377 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:53,377 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:53,378 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:53,378 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:53,551 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:53,551 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:56:53,551 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:53,551 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:56:53,552 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:53,552 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:56:53,552 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:53,552 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:56:53,553 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:56:53,553 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:03,392 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:03,392 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:03,392 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:03,392 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:03,393 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:03,393 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:03,394 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:03,394 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:03,395 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:03,395 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:03,714 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:03,714 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:03,714 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:03,714 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:03,714 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:03,714 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:03,715 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:03,715 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:03,715 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:03,715 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:05,042 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:05,042 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:05,043 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:05,043 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:05,043 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:05,043 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:05,044 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:05,044 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:05,044 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:05,044 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:07,345 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:07,345 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:07,345 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:07,345 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:07,346 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:07,346 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:07,347 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:07,347 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:07,347 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:07,347 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:41,821 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:41,821 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:41,822 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:41,822 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:41,822 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:41,822 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:41,823 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:41,823 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:41,823 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:41,823 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:42,229 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:42,229 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:42,229 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:42,229 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:42,229 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:42,229 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:42,230 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:42,230 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:42,230 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:42,230 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:42,567 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:42,567 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:42,567 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:42,567 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:42,568 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:42,568 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:42,568 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:42,568 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:42,569 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:42,569 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:47,049 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:47,049 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:47,050 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:47,050 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:47,050 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:47,050 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:47,050 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:47,050 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:47,051 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:47,051 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:47,158 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:47,158 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 14:57:47,167 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:47,167 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 14:57:47,167 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:47,167 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 14:57:47,168 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:47,168 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 14:57:47,168 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 14:57:47,168 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:04,192 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:04,192 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:04,192 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:04,192 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:04,193 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:04,193 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:04,193 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:04,193 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:04,193 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:04,193 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:05,937 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:05,937 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:05,938 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:05,938 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:05,939 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:05,939 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:05,941 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:05,941 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:05,942 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:05,942 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:06,204 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:06,204 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:06,205 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:06,205 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:06,205 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:06,205 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:06,206 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:06,206 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:06,206 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:06,206 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:06,337 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:06,337 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:06,337 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:06,337 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:06,337 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:06,337 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:06,340 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:06,340 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:06,341 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:06,341 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:08,118 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:08,118 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:08,119 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:08,119 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:08,119 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:08,119 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:08,120 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:08,120 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:08,120 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:08,120 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:08,233 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:08,233 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:08,233 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:08,233 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:08,234 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:08,234 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:08,235 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:08,235 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:08,235 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:08,235 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:08,441 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:08,441 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:08,441 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:08,441 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:08,442 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:08,442 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:08,442 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:08,442 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:08,442 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:08,442 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:18,707 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:18,707 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:18,708 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:18,708 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:18,708 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:18,708 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:18,708 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:18,708 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:18,710 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:18,710 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:18,889 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:18,889 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:18,890 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:18,890 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:18,890 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:18,890 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:18,890 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:18,890 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:18,891 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:18,891 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:19,463 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:19,463 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:19,465 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:19,465 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:19,465 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:19,465 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:19,465 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:19,465 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:19,466 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:19,466 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:19,695 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:19,695 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:19,696 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:19,696 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:19,696 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:19,696 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:19,697 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:19,697 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:19,697 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:19,697 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:20,943 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:20,943 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:20,944 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:20,944 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:20,946 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:20,946 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:20,948 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:20,948 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:20,949 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:20,949 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:21,044 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:21,044 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:21,045 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:21,045 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:21,045 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:21,045 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:21,047 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:21,047 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:21,047 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:21,047 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:26,582 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:26,582 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:26,582 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:26,582 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:26,583 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:26,583 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:26,584 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:26,584 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:26,584 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:26,584 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:30,225 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:30,225 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:30,225 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:30,225 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:30,225 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:30,225 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:30,226 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:30,226 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:30,226 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:30,226 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:33,619 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:33,619 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:33,620 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:33,620 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:33,620 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:33,620 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:33,621 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:33,621 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:33,622 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:33,622 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:33,871 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:33,871 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:33,872 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:33,872 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:33,872 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:33,872 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:33,873 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:33,873 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:33,873 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:33,873 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:34,010 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:34,010 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:34,010 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:34,010 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:34,010 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:34,010 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:34,011 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:34,011 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:34,011 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:34,011 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:39,988 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:39,988 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:39,989 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:39,989 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:39,990 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:39,990 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:39,991 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:39,991 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:39,992 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:39,992 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:40,113 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:40,113 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:40,114 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:40,114 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:40,114 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:40,114 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:40,114 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:40,114 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:40,115 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:40,115 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:40,223 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:40,223 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:40,223 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:40,223 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:40,223 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:40,223 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:40,224 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:40,224 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:40,224 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:40,224 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:40,325 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:40,325 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:40,325 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:40,325 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:40,326 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:40,326 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:40,326 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:40,326 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:40,327 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:40,327 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:40,411 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:40,411 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:01:40,412 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:40,412 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:01:40,412 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:40,412 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:01:40,413 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:40,413 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:01:40,413 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:01:40,413 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:15:37,614 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:15:37,614 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:15:37,614 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:15:37,614 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:15:37,615 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:15:37,615 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:15:37,615 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:15:37,615 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:15:37,616 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:15:37,616 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:15:37,990 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:15:37,990 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:15:37,991 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:15:37,991 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:15:37,991 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:15:37,991 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:15:37,992 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:15:37,992 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:15:37,992 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:15:37,992 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:15:43,798 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:15:43,798 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:15:43,799 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:15:43,799 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:15:43,799 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:15:43,799 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:15:43,800 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:15:43,800 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:15:43,800 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:15:43,800 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:15:43,945 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:15:43,945 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:15:43,946 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:15:43,946 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:15:43,947 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:15:43,947 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:15:43,947 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:15:43,947 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:15:43,948 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:15:43,948 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:15:44,155 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:15:44,155 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:15:44,156 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:15:44,156 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:15:44,157 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:15:44,157 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:15:44,159 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:15:44,159 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:15:44,160 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:15:44,160 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:06,253 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:06,253 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:06,253 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:06,253 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:06,253 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:06,253 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:06,254 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:06,254 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:06,254 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:06,254 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:12,518 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:12,518 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:12,519 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:12,519 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:12,519 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:12,519 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:12,520 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:12,520 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:12,520 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:12,520 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:12,719 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:12,719 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:12,720 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:12,720 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:12,720 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:12,720 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:12,721 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:12,721 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:12,721 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:12,721 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:25,094 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:25,094 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:25,095 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:25,095 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:25,096 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:25,096 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:25,098 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:25,098 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:25,098 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:25,098 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:25,222 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:25,222 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:25,222 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:25,222 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:25,222 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:25,222 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:25,223 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:25,223 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:25,223 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:25,223 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:26,214 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:26,214 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:26,214 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:26,214 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:26,215 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:26,215 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:26,215 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:26,215 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:26,216 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:26,216 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:28,404 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:28,404 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:28,404 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:28,404 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:28,404 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:28,404 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:28,405 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:28,405 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:28,406 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:28,406 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:28,492 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:28,492 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:16:28,492 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:28,492 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:16:28,493 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:28,493 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:16:28,494 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:28,494 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:16:28,494 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:16:28,494 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:44,414 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:44,414 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:44,416 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:44,416 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:44,416 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:44,416 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:44,418 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:44,418 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:44,418 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:44,418 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:44,563 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:44,563 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:44,564 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:44,564 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:44,564 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:44,564 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:44,566 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:44,566 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:44,566 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:44,566 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:44,700 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:44,700 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:44,701 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:44,701 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:44,701 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:44,701 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:44,701 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:44,701 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:44,702 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:44,702 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:45,005 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:45,005 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:45,005 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:45,005 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:45,005 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:45,005 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:45,006 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:45,006 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:45,006 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:45,006 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:45,155 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:45,155 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:45,155 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:45,155 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:45,156 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:45,156 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:45,156 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:45,156 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:45,156 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:45,156 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:46,475 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:46,475 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:46,476 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:46,476 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:46,476 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:46,476 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:46,477 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:46,477 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:46,477 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:46,477 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:46,657 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:46,657 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:46,657 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:46,657 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:46,657 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:46,657 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:46,658 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:46,658 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:46,658 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:46,658 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:46,911 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:46,911 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:46,912 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:46,912 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:46,912 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:46,912 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:46,913 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:46,913 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:46,914 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:46,914 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:47,269 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:47,269 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:47,269 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:47,269 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:47,270 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:47,270 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:47,270 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:47,270 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:47,270 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:47,270 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:47,510 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:47,510 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:47,511 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:47,511 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:47,511 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:47,511 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:47,511 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:47,511 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:47,512 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:47,512 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:47,896 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:47,896 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:47,897 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:47,897 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:47,898 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:47,898 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:47,898 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:47,898 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:47,899 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:47,899 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:48,328 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:48,328 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:48,329 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:48,329 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:48,329 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:48,329 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:48,329 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:48,329 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:48,330 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:48,330 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:48,560 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:48,560 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:48,561 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:48,561 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:48,562 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:48,562 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:48,564 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:48,564 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:48,565 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:48,565 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:48,749 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:48,749 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:48,750 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:48,750 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:48,750 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:48,750 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:48,751 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:48,751 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:48,752 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:48,752 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:49,734 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:49,734 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:49,735 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:49,735 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:49,735 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:49,735 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:49,736 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:49,736 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:49,736 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:49,736 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:49,890 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:49,890 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:49,891 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:49,891 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:49,891 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:49,891 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:49,892 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:49,892 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:49,893 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:49,893 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:50,000 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:50,000 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:50,000 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:50,000 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:50,001 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:50,001 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:50,001 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:50,001 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:50,002 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:50,002 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:50,100 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:50,100 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:50,100 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:50,100 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:50,101 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:50,101 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:50,102 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:50,102 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:50,102 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:50,102 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:50,203 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:50,203 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:50,203 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:50,203 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:50,204 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:50,204 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:50,204 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:50,204 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:50,205 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:50,205 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:50,295 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:50,295 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 15:19:50,296 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:50,296 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 15:19:50,297 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:50,297 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 15:19:50,297 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:50,297 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 15:19:50,298 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 15:19:50,298 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:39,633 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:39,633 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:39,635 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:39,635 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:39,635 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:39,635 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:39,637 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:39,637 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:39,637 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:39,637 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:40,137 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:40,137 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:40,138 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:40,138 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:40,138 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:40,138 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:40,138 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:40,138 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:40,139 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:40,139 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:40,498 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:40,498 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:40,498 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:40,498 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:40,498 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:40,498 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:40,499 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:40,499 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:40,499 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:40,499 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:41,081 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:41,081 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:41,081 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:41,081 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:41,082 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:41,082 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:41,082 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:41,082 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:41,082 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:41,082 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:41,300 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:41,300 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:41,301 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:41,301 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:41,301 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:41,301 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:41,301 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:41,301 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:41,301 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:41,301 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:41,415 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:41,415 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:41,415 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:41,415 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:41,416 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:41,416 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:41,416 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:41,416 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:41,416 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:41,416 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:41,558 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:41,558 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:41,559 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:41,559 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:41,559 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:41,559 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:41,559 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:41,559 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:41,559 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:41,559 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:41,969 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:41,969 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:08:41,969 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:41,969 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:08:41,969 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:41,969 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:08:41,969 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:41,969 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:08:41,970 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:08:41,970 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:02,634 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:02,634 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:02,634 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:02,634 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:02,634 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:02,634 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:02,634 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:02,634 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:02,635 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:02,635 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:02,758 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:02,758 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:02,758 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:02,758 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:02,758 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:02,758 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:02,759 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:02,759 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:02,759 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:02,759 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:03,723 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:03,723 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:03,724 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:03,724 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:03,724 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:03,724 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:03,724 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:03,724 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:03,724 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:03,724 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:36,752 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:36,752 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:36,753 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:36,753 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:36,753 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:36,753 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:36,753 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:36,753 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:36,753 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:36,753 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:37,038 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:37,038 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:37,038 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:37,038 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:37,039 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:37,039 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:37,039 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:37,039 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:37,039 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:37,039 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:37,206 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:37,206 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:37,206 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:37,206 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:37,207 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:37,207 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:37,207 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:37,207 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:37,207 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:37,207 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:37,258 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:37,258 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:37,258 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:37,258 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:37,259 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:37,259 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:37,259 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:37,259 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:37,259 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:37,259 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:47,086 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:47,086 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:09:47,087 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:47,087 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:09:47,087 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:47,087 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:09:47,087 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:47,087 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:09:47,088 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:09:47,088 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:42,376 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:42,376 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:42,376 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:42,376 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:42,376 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:42,376 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:42,377 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:42,377 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:42,378 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:42,378 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:44,567 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:44,567 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:44,567 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:44,567 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:44,568 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:44,568 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:44,568 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:44,568 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:44,568 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:44,568 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:44,576 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:44,576 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:44,576 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:44,576 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:44,577 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:44,577 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:44,577 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:44,577 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:44,577 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:44,577 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:44,585 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:44,585 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:44,585 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:44,585 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:44,585 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:44,585 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:44,585 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:44,585 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:44,585 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:44,585 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:44,592 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:44,592 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:44,593 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:44,593 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:44,593 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:44,593 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:44,593 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:44,593 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:44,593 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:44,593 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:55,141 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:55,141 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:55,141 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:55,141 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:55,141 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:55,141 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:55,141 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:55,141 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:55,142 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:55,142 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:55,555 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:55,555 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:55,556 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:55,556 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:55,556 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:55,556 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:55,574 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:55,574 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:55,575 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:55,575 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:56,039 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:56,039 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:56,039 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:56,039 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:56,040 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:56,040 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:56,040 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:56,040 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:56,040 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:56,040 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:56,185 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:56,185 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:11:56,185 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:56,185 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:11:56,185 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:56,185 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:11:56,185 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:56,185 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:11:56,186 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:11:56,186 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:14:38,888 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:14:38,888 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:14:38,888 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:14:38,888 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:14:38,889 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:14:38,889 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:14:38,889 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:14:38,889 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:14:38,889 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:14:38,889 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:14:56,450 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:14:56,450 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:14:56,450 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:14:56,450 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:14:56,450 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:14:56,450 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:14:56,451 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:14:56,451 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:14:56,451 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:14:56,451 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:15:40,253 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:15:40,253 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:15:40,254 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:15:40,254 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:15:40,254 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:15:40,254 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:15:40,255 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:15:40,255 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:15:40,255 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:15:40,255 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:08,641 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:08,641 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:08,641 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:08,641 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:08,641 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:08,641 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:08,642 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:08,642 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:08,642 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:08,642 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:09,112 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:09,112 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:09,112 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:09,112 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:09,112 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:09,112 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:09,113 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:09,113 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:09,113 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:09,113 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:09,165 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:09,165 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:09,165 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:09,165 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:09,165 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:09,165 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:09,165 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:09,165 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:09,165 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:09,165 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:09,322 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:09,322 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:09,322 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:09,322 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:09,322 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:09,322 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:09,322 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:09,322 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:09,323 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:09,323 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:10,817 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:10,817 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:10,818 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:10,818 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:10,818 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:10,818 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:10,818 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:10,818 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:10,818 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:10,818 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:10,877 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:10,877 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:10,877 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:10,877 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:10,878 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:10,878 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:10,878 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:10,878 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:10,878 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:10,878 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:12,999 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:12,999 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:12,999 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:12,999 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:12,999 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:12,999 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:12,999 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:12,999 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:13,000 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:13,000 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:17,866 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:17,866 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:17,867 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:17,867 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:17,867 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:17,867 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:17,867 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:17,867 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:17,867 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:17,867 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:37,901 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:37,901 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:16:37,902 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:37,902 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:16:37,902 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:37,902 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:16:37,902 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:37,902 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:16:37,902 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:16:37,902 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:18:30,369 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:18:30,369 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:18:30,370 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:18:30,370 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:18:30,370 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:18:30,370 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:18:30,370 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:18:30,370 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:18:30,371 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:18:30,371 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:18:30,582 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:18:30,582 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:18:30,583 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:18:30,583 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:18:30,583 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:18:30,583 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:18:30,583 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:18:30,583 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:18:30,583 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:18:30,583 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:18:30,705 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:18:30,705 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:18:30,705 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:18:30,705 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:18:30,706 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:18:30,706 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:18:30,706 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:18:30,706 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:18:30,706 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:18:30,706 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:18:30,836 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:18:30,836 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:18:30,836 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:18:30,836 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:18:30,837 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:18:30,837 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:18:30,837 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:18:30,837 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:18:30,837 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:18:30,837 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:18:35,597 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:18:35,597 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:18:35,597 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:18:35,597 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:18:35,597 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:18:35,597 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:18:35,598 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:18:35,598 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:18:35,598 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:18:35,598 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:18:42,485 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:18:42,485 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:18:42,486 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:18:42,486 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:18:42,486 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:18:42,486 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:18:42,486 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:18:42,486 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:18:42,486 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:18:42,486 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:19:14,386 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:19:14,386 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:19:14,386 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:19:14,386 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:19:14,386 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:19:14,386 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:19:14,387 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:19:14,387 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:19:14,387 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:19:14,387 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:19:17,924 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:19:17,924 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:19:17,924 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:19:17,924 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:19:17,924 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:19:17,924 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:19:17,925 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:19:17,925 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:19:17,925 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:19:17,925 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:19:28,173 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:19:28,173 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:19:28,173 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:19:28,173 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:19:28,173 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:19:28,173 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:19:28,174 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:19:28,174 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:19:28,174 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:19:28,174 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:19:28,270 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:19:28,270 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:19:28,270 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:19:28,270 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:19:28,270 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:19:28,270 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:19:28,270 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:19:28,270 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:19:28,271 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:19:28,271 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:19:34,719 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:19:34,719 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:19:34,719 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:19:34,719 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:19:34,719 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:19:34,719 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:19:34,719 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:19:34,719 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:19:34,720 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:19:34,720 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:19:34,799 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:19:34,799 - parso.python.diff - DEBUG - diff parser start
+2020-05-22 17:19:34,800 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:19:34,800 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-05-22 17:19:34,800 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:19:34,800 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-05-22 17:19:34,800 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:19:34,800 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-05-22 17:19:34,800 - parso.python.diff - DEBUG - diff parser end
+2020-05-22 17:19:34,800 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:21:27,090 - root - DEBUG - detected 0, inserted: 0 lines out of 5000; not in taxo: 4997
+2020-06-29 18:21:27,091 - root - DEBUG - Done extracting phone & accessories websites from Product.gz file
+2020-06-29 18:22:54,518 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\jedi\third_party\typeshed\stdlib\2and3\builtins.pyi
+2020-06-29 18:22:54,580 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\jedi\third_party\typeshed\stdlib\3\sys.pyi
+2020-06-29 18:22:54,624 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:22:54,624 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:22:54,624 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:22:54,625 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:22:54,625 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:22:55,953 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:22:55,954 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:22:55,954 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:22:55,954 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:22:55,954 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:22:58,943 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:22:58,943 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:22:58,944 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:22:58,944 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:22:58,944 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:22:59,065 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\typing.py
+2020-06-29 18:22:59,090 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\jedi\third_party\typeshed\stdlib\3\typing.pyi
+2020-06-29 18:22:59,274 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:22:59,274 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:22:59,274 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:22:59,274 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:22:59,274 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:22:59,385 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:22:59,386 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:22:59,386 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:22:59,386 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:22:59,387 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:23:45,655 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:23:45,655 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:23:45,655 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:23:45,656 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:23:45,656 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:23:45,774 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:23:45,774 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:23:45,774 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:23:45,775 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:23:45,775 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:23:51,294 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:23:51,294 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:23:51,294 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:23:51,295 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:23:51,295 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:23:56,123 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:23:56,124 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:23:56,124 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:23:56,124 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:23:56,124 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:23:56,529 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:23:56,529 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:23:56,529 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:23:56,529 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:23:56,529 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:24:02,153 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:24:02,153 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:24:02,153 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:24:02,154 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:24:02,154 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:24:44,123 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:24:44,123 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:24:44,123 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:24:44,124 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:24:44,124 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:25:07,732 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:25:07,732 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:25:07,733 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:25:07,733 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:25:07,733 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:25:07,906 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:25:07,906 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:25:07,906 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:25:07,907 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:25:07,907 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:25:07,981 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:25:07,981 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:25:07,981 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:25:07,981 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:25:07,982 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:26:21,021 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:26:21,021 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:26:21,021 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:26:21,022 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:26:21,022 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:26:21,139 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:26:21,139 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:26:21,139 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:26:21,140 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:26:21,140 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:26:28,265 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:26:28,266 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:26:28,266 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:26:28,266 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:26:28,267 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:26:29,512 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:26:29,512 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:26:29,513 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:26:29,513 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:26:29,513 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:26:40,427 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:26:40,427 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:26:40,427 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:26:40,427 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:26:40,428 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:26:40,679 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:26:40,680 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:26:40,680 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:26:40,681 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:26:40,681 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:26:55,213 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:26:55,213 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:26:55,213 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:26:55,214 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:26:55,214 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:26:55,740 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:26:55,741 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:26:55,741 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:26:55,741 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:26:55,741 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:26:55,921 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:26:55,922 - parso.python.diff - DEBUG - line_lengths old: 1; new: 4
+2020-06-29 18:26:55,922 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:4]
+2020-06-29 18:26:55,923 - parso.python.diff - DEBUG - parse_part from 1 to 4 (to 3 in part parser)
+2020-06-29 18:26:55,923 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:27:48,689 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:27:48,689 - parso.python.diff - DEBUG - line_lengths old: 4; new: 1
+2020-06-29 18:27:48,689 - parso.python.diff - DEBUG - -> code[replace] old[1:4] new[1:1]
+2020-06-29 18:27:48,690 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:27:48,690 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:27:50,879 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:27:50,879 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:27:50,879 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:27:50,880 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:27:50,880 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:27:50,999 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:27:50,999 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:27:50,999 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:27:51,000 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:27:51,000 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:27:51,154 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:27:51,154 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:27:51,154 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:27:51,155 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:27:51,155 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:29:28,453 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:29:28,454 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:29:28,454 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:29:28,454 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:29:28,454 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:29:29,706 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:29:29,706 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:29:29,706 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:29:29,707 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:29:29,707 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:29:29,810 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:29:29,810 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:29:29,810 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:29:29,811 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:29:29,811 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:30:29,002 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:30:29,002 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:30:29,003 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:30:29,003 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:30:29,003 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:30:34,858 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:30:34,858 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:30:34,859 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:30:34,859 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:30:34,859 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:30:35,446 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:30:35,447 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:30:35,447 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:30:35,448 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:30:35,448 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:30:35,574 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:30:35,574 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:30:35,574 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:30:35,574 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:30:35,575 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:30:35,756 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:30:35,757 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:30:35,757 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:30:35,757 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:30:35,757 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:30:36,031 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:30:36,032 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:30:36,032 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:30:36,032 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:30:36,032 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:30:37,910 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:30:37,910 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:30:37,910 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:30:37,911 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:30:37,911 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:30:39,522 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:30:39,522 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:30:39,522 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:30:39,523 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:30:39,524 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 18:30:56,025 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 18:30:56,025 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 18:30:56,025 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 18:30:56,026 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 18:30:56,026 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 19:16:41,501 - root - DEBUG - detected 0, inserted: 0 lines out of 500; not in taxo: 499
+2020-06-29 19:16:41,506 - root - DEBUG - Done extracting phone & accessories websites from Product.gz file
+2020-06-29 19:20:24,818 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 19:20:24,819 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 19:20:24,820 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 19:20:24,842 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 19:20:24,842 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 19:20:25,045 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 19:20:25,045 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 19:20:25,046 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 19:20:25,046 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 19:20:25,046 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 19:20:25,115 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 19:20:25,115 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 19:20:25,116 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 19:20:25,116 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 19:20:25,116 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 19:20:40,926 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 19:20:40,926 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 19:20:40,927 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 19:20:40,927 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 19:20:40,927 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 19:20:41,966 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 19:20:41,967 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 19:20:41,967 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 19:20:41,968 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 19:20:41,968 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 19:20:46,093 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 19:20:46,093 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 19:20:46,093 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 19:20:46,094 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 19:20:46,094 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 19:20:46,790 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 19:20:46,790 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 19:20:46,790 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 19:20:46,792 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 19:20:46,792 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 19:20:49,083 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 19:20:49,083 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 19:20:49,083 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 19:20:49,084 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 19:20:49,084 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 19:20:49,165 - parso.python.diff - DEBUG - diff parser start
+2020-06-29 19:20:49,165 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-29 19:20:49,165 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-29 19:20:49,166 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-29 19:20:49,166 - parso.python.diff - DEBUG - diff parser end
+2020-06-29 23:47:07,009 - root - DEBUG - detected 26821, inserted: 26821 lines out of 4846853993; not in taxo: 4837926119
+2020-06-29 23:47:07,013 - root - DEBUG - Done extracting phone & accessories websites from Product.gz file
+2020-06-30 13:07:36,122 - root - DEBUG - detected 26821, inserted: 26821 lines out of 4846853993; not in taxo: 4837926119
+2020-06-30 13:07:36,127 - root - DEBUG - Done extracting phone & accessories websites from Product.gz file
+2020-06-30 15:48:56,241 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:48:56,242 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:48:56,242 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:48:56,243 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:48:56,244 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:48:56,248 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:48:56,248 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:48:56,248 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:48:56,249 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:48:56,249 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:48:56,252 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:48:56,253 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:48:56,253 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:48:56,253 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:48:56,254 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:48:56,372 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:48:56,373 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:48:56,373 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:48:56,374 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:48:56,374 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:48:56,591 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:48:56,591 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:48:56,591 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:48:56,591 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:48:56,591 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:41,813 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:41,813 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:41,814 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:41,814 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:41,814 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:41,814 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:41,815 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:41,815 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:41,816 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:41,816 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:41,943 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\jedi\third_party\typeshed\stdlib\2and3\builtins.pyi
+2020-06-30 15:50:41,943 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\jedi\third_party\typeshed\stdlib\2and3\builtins.pyi
+2020-06-30 15:50:42,035 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\jedi\third_party\typeshed\stdlib\3\sys.pyi
+2020-06-30 15:50:42,035 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\jedi\third_party\typeshed\stdlib\3\sys.pyi
+2020-06-30 15:50:42,120 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:42,120 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:42,121 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:42,121 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:42,121 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:42,121 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:42,122 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:42,122 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:42,122 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:42,122 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:45,913 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:45,913 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:45,913 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:45,913 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:45,914 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:45,914 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:45,914 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:45,914 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:45,914 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:45,914 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:47,206 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:47,206 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:47,206 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:47,206 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:47,207 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:47,207 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:47,207 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:47,207 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:47,207 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:47,207 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:49,400 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:49,400 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:49,401 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:49,401 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:49,401 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:49,401 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:49,401 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:49,401 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:49,402 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:49,402 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:49,563 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:49,563 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:49,563 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:49,563 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:49,563 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:49,563 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:49,564 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:49,564 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:49,565 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:49,565 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:50,922 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:50,922 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:50,923 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:50,923 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:50,923 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:50,923 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:50,924 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:50,924 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:50,924 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:50,924 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:53,051 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:53,051 - parso.python.diff - DEBUG - diff parser start
+2020-06-30 15:50:53,051 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:53,051 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-06-30 15:50:53,051 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:53,051 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-06-30 15:50:53,052 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:53,052 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-06-30 15:50:53,052 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:53,052 - parso.python.diff - DEBUG - diff parser end
+2020-06-30 15:50:53,151 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\IPython\core\interactiveshell.py
+2020-06-30 15:50:53,151 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\IPython\core\interactiveshell.py
+2020-06-30 15:59:44,748 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): publicsuffix.org:443
+2020-06-30 15:59:44,951 - urllib3.connectionpool - DEBUG - https://publicsuffix.org:443 "GET /list/public_suffix_list.dat HTTP/1.1" 200 None

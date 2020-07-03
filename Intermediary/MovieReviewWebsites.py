@@ -15,6 +15,9 @@
 # +
 # System libraries
 import logging, os, sys
+import pandas as pd
+from urllib.parse import urlparse
+import tldextract
 
 # Enable logging
 logger = logging.getLogger()
@@ -72,3 +75,35 @@ with gzip.open(movies_path,"rt") as f:
 logging.debug("detected " + str(detected) + ", inserted: " + str(inserted) +" lines out of " + str(i) + "; not in taxo: " + str(not_taxo))
 logging.debug("Done processing the product/categories file")
 
+# +
+
+df = pd.read_csv('moviereview_sites.txt', sep=" ", header=None)
+df.columns = ["url"]
+df.describe()
+
+# +
+
+def getNetloc(row):
+    try:
+
+        return urlparse(row['url']).netloc
+    except:
+        print("expection: ", row['url'])
+    else:
+        print("sad", row['url'])
+
+# +
+
+def getSuffix(row):
+    try:
+        return tldextract.extract(row['netloc']).suffix
+    except:
+        print("expection: ", row['url'])
+    else:
+        print("sad", row['url'])
+df['suffix'] = df.apply(getSuffix, axis = 1)
+df.describe()
+
+# +
+
+df['netloc'].value_counts().index.tolist()

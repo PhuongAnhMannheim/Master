@@ -45,8 +45,8 @@ with gzip.open(movies_path,"rt") as f:
     not_taxo = 0
     inserted = 0
 
-    #head = [next(f) for x in range(5000)]
-    #print(head)
+    head = [next(f) for x in range(5000)]
+    print(head)
     #for line in head:
     for line in iter(f.readline, ""):
         i += 1
