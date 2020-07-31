@@ -1,0 +1,16 @@
+2020-07-02 11:27:40,517 - root - DEBUG - detected 0, inserted: 0 lines out of 5000; not in taxo: 0
+2020-07-02 11:27:40,517 - root - DEBUG - detected 0, inserted: 0 lines out of 5000; not in taxo: 0
+2020-07-02 11:27:40,517 - root - DEBUG - Done processing the movie reviews file from Movie.gz and Review.gz after the database got deleted
+2020-07-02 11:27:40,517 - root - DEBUG - Done processing the movie reviews file from Movie.gz and Review.gz after the database got deleted
+2020-07-02 11:27:47,681 - root - DEBUG - detected 0, inserted: 0 lines out of 500000; not in taxo: 0
+2020-07-02 11:27:47,681 - root - DEBUG - detected 0, inserted: 0 lines out of 500000; not in taxo: 0
+2020-07-02 11:27:47,682 - root - DEBUG - Done processing the movie reviews file from Movie.gz and Review.gz after the database got deleted
+2020-07-02 11:27:47,682 - root - DEBUG - Done processing the movie reviews file from Movie.gz and Review.gz after the database got deleted
+2020-07-04 11:51:21,045 - root - ERROR - Invalid alias: The name clear can't be aliased because it is another magic command.
+2020-07-04 11:51:21,045 - root - ERROR - Invalid alias: The name clear can't be aliased because it is another magic command.
+2020-07-04 11:51:21,045 - root - ERROR - Invalid alias: The name more can't be aliased because it is another magic command.
+2020-07-04 11:51:21,045 - root - ERROR - Invalid alias: The name more can't be aliased because it is another magic command.
+2020-07-04 11:51:21,045 - root - ERROR - Invalid alias: The name less can't be aliased because it is another magic command.
+2020-07-04 11:51:21,045 - root - ERROR - Invalid alias: The name less can't be aliased because it is another magic command.
+2020-07-04 11:51:21,045 - root - ERROR - Invalid alias: The name man can't be aliased because it is another magic command.
+2020-07-04 11:51:21,045 - root - ERROR - Invalid alias: The name man can't be aliased because it is another magic command.

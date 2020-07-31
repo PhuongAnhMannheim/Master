@@ -18,7 +18,7 @@ import logging, os, sys
 
 # Enable logging
 logger = logging.getLogger()
-fhandler = logging.FileHandler(filename='moviesbase#1.log', mode='a')
+fhandler = logging.FileHandler(filename='moviesbase1.log', mode='a')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 fhandler.setFormatter(formatter)
 logger.addHandler(fhandler)
