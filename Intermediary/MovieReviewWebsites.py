@@ -21,7 +21,7 @@ import tldextract
 
 # Enable logging
 logger = logging.getLogger()
-fhandler = logging.FileHandler(filename='movieReviewWebsites.log', mode='a')
+fhandler = logging.FileHandler(filename='../Logs/movieReviewWebsites.log', mode='a')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 fhandler.setFormatter(formatter)
 logger.addHandler(fhandler)

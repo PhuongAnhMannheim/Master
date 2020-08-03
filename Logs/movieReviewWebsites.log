@@ -10,3 +10,5 @@
 2020-05-12 10:43:43,874 - matplotlib.font_manager - DEBUG - Using fontManager instance from /root/.cache/matplotlib/fontlist-v310.json
 2020-05-12 10:52:51,039 - root - DEBUG - detected 432268, inserted: 432268 lines out of 85040104; not in taxo: 84607836
 2020-05-12 10:52:51,040 - root - DEBUG - Done processing the product/categories file
+2020-06-25 12:23:29,390 - root - DEBUG - detected 432268, inserted: 432268 lines out of 85040104; not in taxo: 84607836
+2020-06-25 12:23:29,391 - root - DEBUG - Done processing the product/categories file
