@@ -7515,3 +7515,123 @@
 2020-08-04 18:25:44,546 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
 2020-08-04 18:25:44,546 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
 2020-08-04 18:25:44,546 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:27:24,086 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:27:24,087 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:27:24,087 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:27:24,087 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:27:24,087 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:27:24,298 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:27:24,298 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:27:24,298 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:27:24,299 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:27:24,299 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:27:24,527 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:27:24,527 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:27:24,527 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:27:24,528 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:27:24,528 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:27:24,644 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:27:24,644 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:27:24,644 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:27:24,645 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:27:24,645 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:27:24,759 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:27:24,759 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:27:24,759 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:27:24,760 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:27:24,760 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:27:24,979 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:27:24,979 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:27:24,979 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:27:24,980 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:27:24,980 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:27:25,141 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:27:25,141 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:27:25,141 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:27:25,142 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:27:25,143 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:27:25,308 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:27:25,308 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:27:25,308 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:27:25,309 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:27:25,309 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:27:25,853 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:27:25,853 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:27:25,853 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:27:25,854 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:27:25,854 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:27:26,161 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:27:26,161 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:27:26,162 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:27:26,162 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:27:26,162 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:29:17,242 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:29:17,242 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:29:17,243 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:29:17,243 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:29:17,243 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:29:17,298 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\typing.py
+2020-08-04 18:29:17,313 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\jedi\third_party\typeshed\stdlib\3\typing.pyi
+2020-08-04 18:29:17,381 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:29:17,382 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:29:17,382 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:29:17,382 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:29:17,383 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:29:17,518 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:29:17,518 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:29:17,519 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:29:17,519 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:29:17,519 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:29:17,701 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:29:17,701 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:29:17,701 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:29:17,702 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:29:17,702 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:29:18,693 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:29:18,693 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:29:18,693 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:29:18,694 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:29:18,694 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:31:47,553 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:31:47,554 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:31:47,554 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:31:47,554 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:31:47,554 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:31:50,208 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:31:50,208 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:31:50,208 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:31:50,209 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:31:50,209 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:31:50,289 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\pandas\core\frame.py
+2020-08-04 18:31:50,315 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\pandas\__init__.py
+2020-08-04 18:31:50,319 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\pandas\core\__init__.py
+2020-08-04 18:31:50,395 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\pandas\core\generic.py
+2020-08-04 18:31:50,435 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\pandas\core\base.py
+2020-08-04 18:31:50,448 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\pandas\core\accessor.py
+2020-08-04 18:31:50,486 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\pandas\core\indexing.py
+2020-08-04 18:31:50,556 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\pandas\_typing.py
+2020-08-04 18:31:58,207 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:31:58,208 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:31:58,208 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:31:58,208 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:31:58,208 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:31:58,338 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:31:58,339 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:31:58,339 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:31:58,339 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:31:58,339 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:32:00,270 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:32:00,270 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:32:00,270 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:32:00,271 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:32:00,271 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:32:00,321 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\logging\__init__.py
+2020-08-04 18:32:00,359 - parso.cache - DEBUG - pickle loaded: c:\users\d064966\appdata\local\continuum\anaconda3\envs\masterthesis\lib\site-packages\jedi\third_party\typeshed\stdlib\2and3\logging\__init__.pyi
+2020-08-04 18:32:05,475 - parso.python.diff - DEBUG - diff parser start
+2020-08-04 18:32:05,475 - parso.python.diff - DEBUG - line_lengths old: 1; new: 1
+2020-08-04 18:32:05,475 - parso.python.diff - DEBUG - -> code[replace] old[1:1] new[1:1]
+2020-08-04 18:32:05,475 - parso.python.diff - DEBUG - parse_part from 1 to 1 (to 0 in part parser)
+2020-08-04 18:32:05,476 - parso.python.diff - DEBUG - diff parser end
+2020-08-04 18:32:09,037 - root - DEBUG - <bound method NDFrame.describe of Empty DataFrame
+Columns: [NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING]
+Index: []>
