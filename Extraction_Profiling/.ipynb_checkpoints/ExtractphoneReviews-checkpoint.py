@@ -135,7 +135,7 @@ for item in phone_lst:
                         conn.commit()
                         inserted += 1
                     except:
-                        logging.debug("failed to execute for params " + str(update_query) + str(props))
+                        # logging.debug("failed to execute for params " + str(update_query) + str(props))
                         failed_updates += 1
 
 logging.debug("detected " + str(detected) + ", inserted: " + str(inserted) +" lines out of " + str(i) + "; not in taxo: " + str(not_taxo))

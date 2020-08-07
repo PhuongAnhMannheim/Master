@@ -4,6 +4,8 @@ reviews.db
 git
 Logs
 Intermediary/.ipynb_checkpoints
+Extraction_Profiling/.ipynb_checkpoints
+Profiling/.ipynb_checkpoints/
 
 # Created by https://www.gitignore.io/api/python,intellij+all
 # Edit at https://www.gitignore.io/?templates=python,intellij+all

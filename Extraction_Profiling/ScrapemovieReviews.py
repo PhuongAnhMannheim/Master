@@ -29,7 +29,7 @@ db_path = '../Data/moviewreviews.db'
 log_path = '../Logs/movieReviews.log'
 
 logger = logging.getLogger()
-fhandler = logging.FileHandler(filename=moviereviewLog_path, mode='a')
+fhandler = logging.FileHandler(filename=log_path, mode='a')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 fhandler.setFormatter(formatter)
 logger.addHandler(fhandler)
@@ -69,7 +69,7 @@ page_count = 0
 movie_count = 0
 review_count = 0
 # umstellen auf 1001
-for page in range (0,11):
+for page in range (11,20):
     page_count= page*50+1
     # print(page_count)
     url = f'https://www.imdb.com/search/title/?title_type=tv_movie,tv_episode&release_date=2000-01-01,2020-12-31&user_rating=1.0,10.0&languages=en&start={page_count}&ref_=adv_nxt'
@@ -82,7 +82,7 @@ for page in range (0,11):
     for movie in movie_containers:
         # link to site with all review previews for each movie
         link = 'https://www.imdb.com/' + movie_containers[i].a['href'] + 'reviews'
-        # link = "https://www.imdb.com/review/rw3754733/"
+        # link = 'https://www.imdb.com//title/tt8022928/reviews'
         # print(link)
         movie_count += 1
         i += 1
@@ -91,6 +91,8 @@ for page in range (0,11):
             permalinks = tiles.find_all('a', href=True, text='Permalink')
             for permalink in permalinks:
                 review_link = host + permalink['href']
+                # review_link = "https://www.imdb.com/review/rw3754733/"
+                # review_link = "https://www.imdb.com/review/rw5040450/"
                 # print(review_link)
                 review_count += 1
                 review_soup = BeautifulSoup(get(review_link).text, 'html.parser')
@@ -99,36 +101,41 @@ for page in range (0,11):
                 except:
                     pass
                 container = review_soup.find("script",type="application/ld+json")
-                for item in container:
-                    if item.__contains__('http://schema.org'):
-                        text = str(item.extract())
-                        oJson = json.loads(text)
-                        # print(oJson)
-                        if (warning):
-                            # ("WARNING!")
-                            reviewBodyContainer = review_soup.body.find_all('div', class_="text show-more__control")
-                            for item in reviewBodyContainer:
-                                reviewBody = item.text
-                            # print(reviewBodyContainer)
-                            # reviewBody = reviewBodyContainer[0].text
-                        else:
-                            reviewBody = str(oJson['reviewBody'])
-                        node = generateNode(31)
-                        reviewRating = str(oJson['reviewRating'])
-                        worstRating = str(oJson['reviewRating']['worstRating'])
-                        bestRating = str(oJson['reviewRating']['bestRating'])
-                        ratingValue = str(oJson['reviewRating']['ratingValue'])
-                        
-            
-                        # print('node:' + node)
-                        # print('url: '+ review_link)
-                        # print('reviewBody: ' + reviewBody)
-                        # print('worstRating: ' + worstRating)
-                        # print('bestRating: ' + bestRating)
-                        # print('ratingValue: ' + ratingValue)
-                            
-                        # print("INSERT OR IGNORE INTO MOVIEREVIEWS (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);""",(node,url,reviewBody,reviewRating,ratingValue,bestRating,worstRating))
-                        c.execute("INSERT OR IGNORE INTO test (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",(node,url,reviewBody,reviewRating,ratingValue,bestRating,worstRating))
-                        conn.commit()
+                try:
+                    for item in container:
+                        if item.__contains__('http://schema.org'):
+                            text = str(item.extract())
+                            oJson = json.loads(text)
+                            # print(oJson)
+                            if (warning):
+                                # ("WARNING!")
+                                reviewBodyContainer = review_soup.body.find_all('div', class_="text show-more__control")
+                                for item in reviewBodyContainer:
+                                    reviewBody = item.text
+                                # print(reviewBodyContainer)
+                                # reviewBody = reviewBodyContainer[0].text
+                            else:
+                                reviewBody = str(oJson['reviewBody'])
+                            try:
+                                node = generateNode(31)
+                                reviewRating = str(oJson['reviewRating'])
+                                worstRating = str(oJson['reviewRating']['worstRating'])
+                                bestRating = str(oJson['reviewRating']['bestRating'])
+                                ratingValue = str(oJson['reviewRating']['ratingValue'])
+                            except: 
+                                continue
+
+                            # print('node:' + node)
+                            # print('url: '+ review_link)
+                            # print('reviewBody: ' + reviewBody)
+                            # print('worstRating: ' + worstRating)
+                            # print('bestRating: ' + bestRating)
+                            # print('ratingValue: ' + ratingValue)
+
+                            # print("INSERT OR IGNORE INTO MOVIEREVIEWS (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);""",(node,url,reviewBody,reviewRating,ratingValue,bestRating,worstRating))
+                            c.execute("INSERT OR IGNORE INTO moviereviews (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",(node,url,reviewBody,reviewRating,ratingValue,bestRating,worstRating))
+                            conn.commit()
+                except:
+                    continue
 logging.debug("number of reviews: " + str(review_count))
 
