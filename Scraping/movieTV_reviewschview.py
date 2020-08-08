@@ -40,22 +40,32 @@ for item in movie_container:
         pass
     else:
         movie_count += 1
-        review_soup = BeautifulSoup(get(review_link).text, 'html.parser')
+        review_soup = BeautifulSoup(get(review_link).text, 'lxml')
         reviews = review_soup.find_all("li", itemprop="review")
         # print(reviews)
-        try: 
+        try:
             for item in reviews:
                 reviewBody = item.find("div", itemprop="reviewBody").text
-                worstRating = item.find("meta", itemprop="worstRating")["content"]
-                bestRating = item.find("meta", itemprop="bestRating")["content"]
-                ratingValue = item.find("p", itemprop="ratingValue").text
-                reviewRating = "already included"
+                reviewRating = item.find("div", itemprop="reviewRating")
+                worstRating_tag = reviewRating.find("meta", itemprop="worstRating")
+                worstRating = worstRating_tag["content"]
+                bestRating_tag = reviewRating.find("meta", itemprop="bestRating")
+                bestRating = bestRating_tag["content"]
+                ratingValue_tag = reviewRating.find("p", itemprop="ratingValue")
+                ratingValue = ratingValue_tag.text
+                # worstRating_tag = item.find("meta", itemprop="worstRating")
+                # worstRating = worstRating_tag["content"]
+                # bestRating_tag = item.find("meta", itemprop="bestRating")
+                # bestRating = bestRating_tag["content"]
+                # ratingValue_tag = item.find("p", itemprop="ratingValue")
+                # ratingValue = ratingValue_tag.text
                 node = generateNode(31)
-                c.execute(f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",(node,review_link,reviewBody,reviewRating,ratingValue,bestRating,worstRating))
+                c.execute(f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",(node,review_link,reviewBody,str(reviewRating),ratingValue,bestRating,worstRating))
                 conn.commit()
                 review_count += 1
-        except:
-            logging.debug("Error" + str(review_link))
+        except Exception as e:
+            logging.debug("Error: " + str(review_link) + str(reviewBody))
+            raise(e)
 
 logging.debug('open movies to get reviews from: ' + str(movie_count))
 logging.debug('amount of reviews extracted: ' + str(review_count))
