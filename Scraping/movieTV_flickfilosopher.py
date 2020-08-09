@@ -10,6 +10,7 @@ current_reviews = set(line.strip() for line in open(flickfilosopher_file))
 
 db_path = '../Data/test.db'
 db_name = 'test'
+log_path = '../Logs/movieReviews.log'
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
 
@@ -25,6 +26,13 @@ c.execute(("""
                WORSTRATING TEXT,
                PRIMARY KEY (NODE, URL))
    """))
+
+logger = logging.getLogger()
+fhandler = logging.FileHandler(filename=log_path, mode='a')
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+fhandler.setFormatter(formatter)
+logger.addHandler(fhandler)
+logger.setLevel(logging.DEBUG)
 
 def generateNode(length):
     letters_and_digits = string.ascii_letters + string.digits
@@ -54,19 +62,35 @@ for url in url_lst:
                     if review_html is None:
                         no_annotation += 1
                     else:
-                        reviewBody_html = review_html.find_all("div", class_="reviewtext")
-                        reviewRating = review_soup.find("div", itemtype="http://schema.org/Rating")
-                        for item in reviewBody_html:
-                            reviewBody += item.p.text
-                        worstRating = reviewRating.find("meta", itemprop="worstRating")["content"]
-                        bestRating = reviewRating.find("meta", itemprop="bestRating")["content"]
-                        ratingValue = reviewRating.find("meta", itemprop="ratingValue")["content"]
-                        if ratingValue == "":
-                            no_rating += 1
-                        else:
-                            node = generateNode(31)
-                            c.execute(f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",(node,review_link,reviewBody,str(reviewRating),ratingValue,bestRating,worstRating))
-                            conn.commit()
-                            review_count += 1
+                        try:
+                            reviewBody_html = review_html.find_all("div", class_="reviewtext")
+                            reviewRating = review_soup.find("div", itemtype="http://schema.org/Rating")
+                            for item in reviewBody_html:
+                                reviewBody += item.p.text
+                            worstRating_tag = reviewRating.find("meta", itemprop="worstRating")
+                            bestRating_tag = reviewRating.find("meta", itemprop="bestRating")
+                            ratingValue_tag = reviewRating.find("meta", itemprop="ratingValue")
+                            if worstRating_tag is None:
+                                worstRating = reviewRating.find("div", itemprop="worstRating")["content"]
+                                bestRating = reviewRating.find("div", itemprop="bestRating")["content"]
+                                ratingValue = reviewRating.find("div", itemprop="ratingValue")["content"]
+                            else:
+                                worstRating = worstRating_tag["content"]
+                                bestRating = bestRating_tag["content"]
+                                ratingValue = ratingValue_tag["content"]
+                            if ratingValue == "":
+                                no_rating += 1
+                            else:
+                                node = generateNode(31)
+                                c.execute(
+                                    f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",
+                                    (node, review_link, reviewBody, str(reviewRating), ratingValue, bestRating,
+                                     worstRating))
+                                conn.commit()
+                                review_count += 1
+                        except Exception as e:
+                            raise (e)
+                            logging.debug("Error: " + str(review_link))
+
 
 logging.debug("amount of reviews extracted: " + str(review_count) + ", amount of entries without review annotations: " + str(no_annotation) + " amount of entries without rating: " + str(no_rating))
