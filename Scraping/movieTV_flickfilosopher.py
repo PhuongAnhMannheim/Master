@@ -5,7 +5,7 @@ import string
 import sqlite3
 import logging
 
-flickfilosopher_file = '../Scraping/flickfilosopher.txt'
+flickfilosopher_file = 'already_links_in/flickfilosopher.txt'
 current_reviews = set(line.strip() for line in open(flickfilosopher_file))
 
 db_path = '../Data/moviewreviews.db'

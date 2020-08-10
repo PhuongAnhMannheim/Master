@@ -6,7 +6,7 @@ import sqlite3
 import logging
 
 # Input
-reviewschview_file = '../Scraping/reviewschview.txt'
+reviewschview_file = 'already_links_in/reviewschview.txt'
 current_reviews = set(line.strip() for line in open(reviewschview_file))
 
 # Output
