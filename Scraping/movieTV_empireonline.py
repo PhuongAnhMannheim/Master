@@ -8,11 +8,11 @@ import logging
 
 # no list to check whether already included
 
-# db_path = '../Data/test.db'
-# db_name = 'test'
+db_path = '../Data/test.db'
+db_name = 'test'
 log_path = '../Logs/test.log'
-# conn = sqlite3.connect(db_path)
-# c = conn.cursor()
+conn = sqlite3.connect(db_path)
+c = conn.cursor()
 
 logger = logging.getLogger()
 fhandler = logging.FileHandler(filename=log_path, mode='a')
@@ -30,6 +30,7 @@ def generateNode(length):
 host = "https://www.empireonline.com"
 review_count = 0
 no_annotation = 0
+fail_lst = []
 
 for page in range (1,419):
     url = f'https://www.empireonline.com/movies/reviews/{page}/'
@@ -37,26 +38,63 @@ for page in range (1,419):
     movie_container = soup.find_all("div", class_="image-content")
     for link in movie_container:
         review_link = host + link.a['href']
+        response = get(review_link, headers={'User-Agent': 'Custom'})
+        review_link = host + link.a['href']
+        response = get(review_link, headers={'User-Agent': 'Custom'})
+        if response.status_code == 404:
+            fail_lst.append(review_link)
+        else:
+            try:
+                review_soup = BeautifulSoup(response.text, 'lxml')
+                data = json.loads("".join(review_soup.find("script", {"type": "application/ld+json"}).contents),strict=False)
+                if not data['@type'] == "review":
+                    no_annotation += 1
+                    pass
+                else:
+                    reviewBody = data['description'].replace('\n', '')
+                    worstRating = data['reviewRating']['worstRating']
+                    bestRating = data['reviewRating']['bestRating']
+                    ratingValue = data['reviewRating']['ratingValue']
+                    reviewRating = "already included"
+                    node = generateNode(31)
+                    # c.execute(f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);", (node, review_link, reviewBody, str(reviewRating), ratingValue, bestRating, worstRating))
+                    # conn.commit()
+                    review_count += 1
+            except Exception as e:
+                logging.debug("Error: " + str(review_link))
+                logging.debug(str(review_soup))
+                raise (e)
+
+logging.debug(("Done with the first round. Reviews extracted: " + str(review_count)))
+
+while len(fail_lst)>0:
+    for i in fail_lst:
+        review_link = i
         response = get(review_link)
-        review_soup = BeautifulSoup(response.text, 'lxml')
-        try:
-            data = json.loads("".join(review_soup.find("script", {"type": "application/ld+json"}).contents),strict=False)
-            if not data['@type'] == "review":
-                no_annotation += 1
-                pass
-            else:
-                reviewBody = data['description'].replace('\n','')
-                worstRating = data['reviewRating']['worstRating']
-                bestRating = data['reviewRating']['bestRating']
-                ratingValue = data['reviewRating']['ratingValue']
-                reviewRating = "already included"
-                node = generateNode(31)
-                # c.execute(f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);", (node, review_link, reviewBody, str(reviewRating), ratingValue, bestRating, worstRating))
-                # conn.commit()
-                review_count += 1
-        except Exception as e:
-            logging.debug("Error: " + str(review_link))
-            logging.debug(str(review_soup))
-            raise(e)
+        if response.status_code == 404:
+            pass
+        else:
+            try:
+                review_soup = BeautifulSoup(response.text, 'lxml')
+                data = json.loads("".join(review_soup.find("script", {"type": "application/ld+json"}).contents),strict=False)
+                if not data['@type'] == "review":
+                    no_annotation += 1
+                    pass
+                else:
+                    reviewBody = data['description'].replace('\n','')
+                    worstRating = data['reviewRating']['worstRating']
+                    bestRating = data['reviewRating']['bestRating']
+                    ratingValue = data['reviewRating']['ratingValue']
+                    reviewRating = "already included"
+                    node = generateNode(31)
+                    c.execute(f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);", (node, review_link, reviewBody, str(reviewRating), ratingValue, bestRating, worstRating))
+                    conn.commit()
+                    review_count += 1
+                    fail_lst.remove(review_link)
+            except Exception as e:
+                logging.debug("Error: " + str(review_link))
+                logging.debug(str(review_soup))
+                raise(e)
 
 logging.debug("Reviews extracted: " + str(review_count) + " , reviews without Review Annotation: " + str(no_annotation))
+
