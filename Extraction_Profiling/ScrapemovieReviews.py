@@ -69,7 +69,7 @@ page_count = 0
 movie_count = 0
 review_count = 0
 # umstellen auf 1001
-for page in range (11,20):
+for page in range (21,50):
     page_count= page*50+1
     # print(page_count)
     url = f'https://www.imdb.com/search/title/?title_type=tv_movie,tv_episode&release_date=2000-01-01,2020-12-31&user_rating=1.0,10.0&languages=en&start={page_count}&ref_=adv_nxt'

@@ -69,7 +69,7 @@ page_count = 0
 movie_count = 0
 review_count = 0
 # umstellen auf 1001
-for page in range (11,20):
+for page in range (21,50):
     page_count= page*50+1
     # print(page_count)
     url = f'https://www.imdb.com/search/title/?title_type=tv_movie,tv_episode&release_date=2000-01-01,2020-12-31&user_rating=1.0,10.0&languages=en&start={page_count}&ref_=adv_nxt'
@@ -101,38 +101,41 @@ for page in range (11,20):
                 except:
                     pass
                 container = review_soup.find("script",type="application/ld+json")
-                for item in container:
-                    if item.__contains__('http://schema.org'):
-                        text = str(item.extract())
-                        oJson = json.loads(text)
-                        # print(oJson)
-                        if (warning):
-                            # ("WARNING!")
-                            reviewBodyContainer = review_soup.body.find_all('div', class_="text show-more__control")
-                            for item in reviewBodyContainer:
-                                reviewBody = item.text
-                            # print(reviewBodyContainer)
-                            # reviewBody = reviewBodyContainer[0].text
-                        else:
-                            reviewBody = str(oJson['reviewBody'])
-                        try:
-                            node = generateNode(31)
-                            reviewRating = str(oJson['reviewRating'])
-                            worstRating = str(oJson['reviewRating']['worstRating'])
-                            bestRating = str(oJson['reviewRating']['bestRating'])
-                            ratingValue = str(oJson['reviewRating']['ratingValue'])
-                        except: 
-                            continue
-            
-                        # print('node:' + node)
-                        # print('url: '+ review_link)
-                        # print('reviewBody: ' + reviewBody)
-                        # print('worstRating: ' + worstRating)
-                        # print('bestRating: ' + bestRating)
-                        # print('ratingValue: ' + ratingValue)
-                            
-                        # print("INSERT OR IGNORE INTO MOVIEREVIEWS (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);""",(node,url,reviewBody,reviewRating,ratingValue,bestRating,worstRating))
-                        c.execute("INSERT OR IGNORE INTO moviereviews (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",(node,url,reviewBody,reviewRating,ratingValue,bestRating,worstRating))
-                        conn.commit()
+                try:
+                    for item in container:
+                        if item.__contains__('http://schema.org'):
+                            text = str(item.extract())
+                            oJson = json.loads(text)
+                            # print(oJson)
+                            if (warning):
+                                # ("WARNING!")
+                                reviewBodyContainer = review_soup.body.find_all('div', class_="text show-more__control")
+                                for item in reviewBodyContainer:
+                                    reviewBody = item.text
+                                # print(reviewBodyContainer)
+                                # reviewBody = reviewBodyContainer[0].text
+                            else:
+                                reviewBody = str(oJson['reviewBody'])
+                            try:
+                                node = generateNode(31)
+                                reviewRating = str(oJson['reviewRating'])
+                                worstRating = str(oJson['reviewRating']['worstRating'])
+                                bestRating = str(oJson['reviewRating']['bestRating'])
+                                ratingValue = str(oJson['reviewRating']['ratingValue'])
+                            except: 
+                                continue
+
+                            # print('node:' + node)
+                            # print('url: '+ review_link)
+                            # print('reviewBody: ' + reviewBody)
+                            # print('worstRating: ' + worstRating)
+                            # print('bestRating: ' + bestRating)
+                            # print('ratingValue: ' + ratingValue)
+
+                            # print("INSERT OR IGNORE INTO MOVIEREVIEWS (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);""",(node,url,reviewBody,reviewRating,ratingValue,bestRating,worstRating))
+                            c.execute("INSERT OR IGNORE INTO moviereviews (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",(node,url,reviewBody,reviewRating,ratingValue,bestRating,worstRating))
+                            conn.commit()
+                except:
+                    continue
 logging.debug("number of reviews: " + str(review_count))
 

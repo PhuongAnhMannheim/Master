@@ -8,9 +8,9 @@ import logging
 
 # no list to check whether already included
 
-db_path = '../Data/test.db'
-db_name = 'test'
-log_path = '../Logs/test.log'
+db_path = '../Data/moviewreviews.db'
+db_name = 'moviereviews'
+log_path = '../Logs/movieReviews.log'
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
 
@@ -37,8 +37,6 @@ for page in range (1,419):
     soup = BeautifulSoup(get(url).text, "lxml")
     movie_container = soup.find_all("div", class_="image-content")
     for link in movie_container:
-        review_link = host + link.a['href']
-        response = get(review_link, headers={'User-Agent': 'Custom'})
         review_link = host + link.a['href']
         response = get(review_link, headers={'User-Agent': 'Custom'})
         if not response.status_code == 200:
