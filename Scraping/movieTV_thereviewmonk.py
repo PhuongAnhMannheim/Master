@@ -27,6 +27,7 @@ logger.setLevel(logging.DEBUG)
 
 host = "https://thereviewmonk.com/"
 review_count = 0
+no_rating = 0
 problem_count = 0
 
 def generateNode(length):
@@ -47,12 +48,19 @@ for i in current_reviews:
             node = generateNode(31)
             url = review_link
             reviewBody = a.find_all('p', itemprop='reviewBody')[0].text
-            ratingValue = str(a.find_all('meta', itemprop='ratingValue')[0]['content'])
-            bestRating = str(10)
-            worstRating = str(0)
-            reviewRating = "already included"
-            c.execute(f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",(node,review_link,reviewBody,str(reviewRating),ratingValue,bestRating,worstRating))
-            conn.commit()
-            review_count += 1
+            rating = a.find_all('meta', itemprop='ratingValue')
+            if (len(rating)) == 0:
+                no_rating += 1
+                continue
+            else:
+                ratingValue = str(rating[0]['content'])
+                bestRating = str(10)
+                worstRating = str(0)
+                reviewRating = "already included"
+                c.execute(
+                    f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",
+                    (node, review_link, reviewBody, str(reviewRating), ratingValue, bestRating, worstRating))
+                conn.commit()
+                review_count += 1
 
-logging.debug(f"Done {host} - Reviews extracted: " + str(review_count) + " , problems: " + str(problem_count))
+logging.debug(f"Done {host} - Reviews extracted: " + str(review_count) + ", without Rating: " + str(no_rating) + ", problems: " + str(problem_count))
