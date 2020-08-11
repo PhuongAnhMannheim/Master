@@ -11,7 +11,7 @@ import pandas as pd
 # Input/ Output
 db_path = '../Data/moviewreviews.db'
 db_name = 'moviereviews'
-log_path = '../Logs/test.log'
+log_path = '../Logs/movieReviews.log'
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
 
@@ -47,4 +47,4 @@ for index, row in df_new.iterrows():
                 c.execute(update_qry, [node,url])
                 conn.commit()
 
-logging.debug("Done: Enriched the in.bookmyshow entries")
+logging.debug("Done in.bookmyshow: Enriched the entries with their ratingValues")
