@@ -5,17 +5,17 @@ import random
 import string
 import sqlite3
 import logging
-#%%
-# Input/ Output
+
+# Input
+current_file = '../Scraping/already_links_in/techadvisor.txt'
+current_reviews = set(line.strip() for line in open(current_file))
+
+#  Output
 db_path = '../Data/test.db'
 db_name = 'test'
 log_path = '../Logs/test.log'
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
-
-# Input
-current_file = '../Scraping/already_links_in/techadvisor.txt'
-current_reviews = set(line.strip() for line in open(current_file))
 
 logger = logging.getLogger()
 fhandler = logging.FileHandler(filename=log_path, mode='a')
@@ -24,7 +24,6 @@ fhandler.setFormatter(formatter)
 logger.addHandler(fhandler)
 logger.setLevel(logging.DEBUG)
 
-#%%
 def generateNode(length):
     letters_and_digits = string.ascii_letters +  string.digits
     result_str = ''.join((random.choice(letters_and_digits) for i in range(length)))
@@ -54,7 +53,6 @@ already_count = 0
 problem_count = 0
 extract_count = 0
 
-review_link = 'https://www.techadvisor.co.uk/review/siemens-sk65-review-104/'
 for review_link in links:
     review_count += 1
     if review_link in current_reviews:
@@ -67,24 +65,23 @@ for review_link in links:
         node = generateNode(31)
         url = review_link
         reviewText = review.find('div', itemprop='reviewBody')
-        reviewText.find('section').decompose()
-
-        reviewBody = reviewText.text.strip()
-        try:
-            ratingValue = review.find('meta', itemprop='ratingValue')['content']
-            bestRating = review.find('meta', itemprop='bestRating')['content']
-            worstRating = review.find('meta', itemprop='worstRating')['content']
-            reviewRating = ''
-
-            print('node:' + node)
-            print('url: '+ review_link)
-            print('reviewBody: ' + reviewBody)
-            print('worstRating: ' + worstRating)
-            print('bestRating: ' + bestRating)
-            print('ratingValue: ' + ratingValue)
-            extract_count += 1
-        except:
-            no_rating += 1
-
+        if reviewText is None:
+            no_annotation += 1
+            continue
+        else:
+            reviewText.find('section').decompose()
+            reviewBody = reviewText.text.strip()
+            try:
+                ratingValue = review.find('meta', itemprop='ratingValue')['content']
+                bestRating = review.find('meta', itemprop='bestRating')['content']
+                worstRating = review.find('meta', itemprop='worstRating')['content']
+                reviewRating = ''
+                c.execute(
+                    f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",
+                    (node, review_link, reviewBody, str(reviewRating), ratingValue, bestRating, worstRating))
+                conn.commit()
+                extract_count += 1
+            except:
+                no_rating += 1
 logging.debug(f"Done {host} - Reviews extracted: " + str(extract_count) + " out of " + str(review_count))
 logging.debug("without Rating: " + str(no_rating) + ", problems: " + str(problem_count))
