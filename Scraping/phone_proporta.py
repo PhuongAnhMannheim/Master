@@ -7,9 +7,9 @@ import logging
 from requests_toolbelt import utils
 
 # Output
-db_path = '../Data/phonereviews.db'
-db_name = 'phonereviews'
-log_path = '../Logs/phoneReviews.log'
+db_path = '../Data/test.db'
+db_name = 'test'
+log_path = '../Logs/test.log'
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
 
@@ -65,21 +65,18 @@ for review_link in links:
         continue
     else:
         # for review in reviews.find_all('li', itemtype='http://schema.org/Review'):
-        for review in reviews:
-            try:
-                node = generateNode(31)
-                url = review_link
-                reviewBody = review.find('p', itemprop='reviewBody').text.split('\n')[0]
-                ratingValue = review.find('span', itemprop='ratingValue').text
-                bestRating = review.find('span', itemprop='bestRating').text
-                worstRating = review.find('meta', itemprop='worstRating')['content']
-                reviewRating = review.find('div', itemprop='reviewRating').text
+        for review in reviews.find_all('li', itemtype='http://schema.org/Review'):
+            node = generateNode(31)
+            url = review_link
+            reviewBody = review.find('p', itemprop='reviewBody').text.split('\r\n')[0]
+            ratingValue = review.find('span', itemprop='ratingValue').text
+            bestRating = review.find('span', itemprop='bestRating').text
+            worstRating = review.find('meta', itemprop='worstRating')['content']
+            reviewRating = review.find('div', itemprop='reviewRating').text
 
-                c.execute(f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",(node, review_link, reviewBody, reviewRating, ratingValue, bestRating, worstRating))
-                conn.commit()
-                extracted_count += 1
-            except:
-                pass
+            c.execute(f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",(node, review_link, reviewBody, reviewRating, ratingValue, bestRating, worstRating))
+            conn.commit()
+            extracted_count += 1
 
 logging.debug(f"Done {host} - Reviews extracted: " + str(extracted_count) + " out of " + str(review_count))
 logging.debug("without Annotation: " + str(no_annotation))
