@@ -65,11 +65,10 @@ for review_link in links:
         node = generateNode(31)
         url = review_link
         reviewText = review.find('div', itemprop='reviewBody')
-        if reviewText is None:
-            no_annotation += 1
-            continue
-        else:
+        try:
             reviewText.find('section').decompose()
+        except:
+            pass
             reviewBody = reviewText.text.strip()
             try:
                 ratingValue = review.find('meta', itemprop='ratingValue')['content']
