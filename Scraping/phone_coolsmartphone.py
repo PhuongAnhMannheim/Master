@@ -61,4 +61,4 @@ for page in range(1, 44):
                 conn.commit()
                 review_count += 1
 
-print(f"Done {host} - Reviews extracted: " + str(review_count) + ", without Rating: " + str(no_annotation))
+logging.debug(f"Done {host} - Reviews extracted: " + str(review_count) + ", without Rating: " + str(no_annotation))
