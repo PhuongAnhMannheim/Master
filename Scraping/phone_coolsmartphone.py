@@ -10,9 +10,9 @@ current_file = 'already_links_in/coolsmartphone.txt'
 current_reviews = set(line.strip() for line in open(current_file))
 
 # Output
-db_path = '../Data/test.db'
-db_name = 'test'
-log_path = '../Logs/test.log'
+db_path = '../Data/phonereviews.db'
+db_name = 'phonereviews'
+log_path = '../Logs/phoneReviews.log'
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
 
@@ -27,6 +27,7 @@ host = "https://www.coolsmartphone.com"
 review_count = 0
 no_annotation = 0
 already_in = 0
+extracted_count = 0
 
 def generateNode(length):
     letters_and_digits = string.ascii_letters +  string.digits
@@ -41,6 +42,7 @@ for page in range(1, 44):
     articles = soup.find_all('article', class_='latestPost excerpt')
     for article in articles:
         review_link = article.a['href']
+        review_count += 1
         if review_link in current_reviews:
             already_in += 1
             pass
@@ -61,8 +63,8 @@ for page in range(1, 44):
                 bestRating = soup.find_all("meta", itemprop="bestRating")[0]['content']
                 c.execute(f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);", (node, review_link, reviewBody, str(reviewRating), ratingValue, bestRating, worstRating))
                 conn.commit()
-                review_count += 1
+                extracted_count += 1
 
-logging.debug(f"Done {host} - Reviews extracted: " + str(review_count))
+logging.debug(f"Done {host} - Reviews extracted: " + str(review_count) + " out of " + str(extracted_count))
 logging.debug("without Annotation: " + str(no_annotation))
 logging.debug("already in: " + str(already_in))
