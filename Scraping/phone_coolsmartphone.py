@@ -10,9 +10,9 @@ current_file = 'already_links_in/coolsmartphone.txt'
 current_reviews = set(line.strip() for line in open(current_file))
 
 # Output
-db_path = '../Data/moviewreviews.db'
-db_name = 'moviereviews'
-log_path = '../Logs/movieReviews.log'
+db_path = '../Data/phonereviews.db'
+db_name = 'phonereviews'
+log_path = '../Logs/phoneReviews.log'
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
 
@@ -26,6 +26,7 @@ logger.setLevel(logging.DEBUG)
 host = "https://www.coolsmartphone.com"
 review_count = 0
 no_annotation = 0
+already_in = 0
 
 def generateNode(length):
     letters_and_digits = string.ascii_letters +  string.digits
@@ -41,6 +42,7 @@ for page in range(1, 44):
     for article in articles:
         review_link = article.a['href']
         if review_link in current_reviews:
+            already_in += 1
             pass
         else:
             response = get(review_link)
@@ -61,4 +63,6 @@ for page in range(1, 44):
                 conn.commit()
                 review_count += 1
 
-logging.debug(f"Done {host} - Reviews extracted: " + str(review_count) + ", without Rating: " + str(no_annotation))
+logging.debug(f"Done {host} - Reviews extracted: " + str(review_count))
+logging.debug("without Annotation: " + str(no_annotation))
+logging.debug("already in: " + str(already_in))

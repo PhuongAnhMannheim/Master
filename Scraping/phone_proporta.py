@@ -7,9 +7,9 @@ import logging
 from requests_toolbelt import utils
 
 # Output
-db_path = '../Data/test.db'
-db_name = 'test'
-log_path = '../Logs/test.log'
+db_path = '../Data/phonereviews.db'
+db_name = 'phonereviews'
+log_path = '../Logs/phoneReviews.log'
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
 
@@ -25,7 +25,7 @@ review_count = 0
 no_annotation = 0
 no_rating = 0
 already_count = 0
-problem_count = 0
+extracted_count = 0
 
 def generateNode(length):
     letters_and_digits = string.ascii_letters + string.digits
@@ -56,13 +56,12 @@ for page in range(1, 5):
         links.append(right.a['href'] + '#allReviews')
 
 for review_link in links:
-#     with utils.total_timout(seconds=3):
     response = get(review_link, headers={'User-Agent': 'Custom'})
     soup = BeautifulSoup(response.text, 'lxml')
     reviews = soup.find('ol', id='reviewContainer')
     if reviews is None:
         no_annotation += 1
-        pass
+        continue
     else:
         # for review in reviews.find_all('li', itemtype='http://schema.org/Review'):
         for review in reviews:
@@ -77,8 +76,9 @@ for review_link in links:
 
                 c.execute(f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",(node, review_link, reviewBody, reviewRating, ratingValue, bestRating, worstRating))
                 conn.commit()
-                review_count =+ 1
+                extracted_count += 1
             except:
                 pass
 
-logging.debug(f"Done {host} - Reviews extracted: " + str(review_count) + ", without Rating: " + str(no_rating))
+logging.debug(f"Done {host} - Reviews extracted: " + str(review_count))
+logging.debug("without Annotation: " + str(no_annotation))
