@@ -7,9 +7,9 @@ import logging
 from requests_toolbelt import utils
 
 # Output
-db_path = '../Data/phonereviews.db'
-db_name = 'phonereviews'
-log_path = '../Logs/phoneReviews.log'
+db_path = '../Data/test.db'
+db_name = 'test'
+log_path = '../Logs/test.log'
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
 
@@ -56,6 +56,7 @@ for page in range(1, 5):
         links.append(right.a['href'] + '#allReviews')
 
 for review_link in links:
+    review_count += 1
     response = get(review_link, headers={'User-Agent': 'Custom'})
     soup = BeautifulSoup(response.text, 'lxml')
     reviews = soup.find('ol', id='reviewContainer')
@@ -71,7 +72,7 @@ for review_link in links:
                 reviewBody = review.find('p', itemprop='reviewBody').text.split('\n')[0]
                 ratingValue = review.find('span', itemprop='ratingValue').text
                 bestRating = review.find('span', itemprop='bestRating').text
-                worstRating = review.find('meta', itemprop='worstRating').text
+                worstRating = review.find('meta', itemprop='worstRating')['content']
                 reviewRating = review.find('div', itemprop='reviewRating').text
 
                 c.execute(f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",(node, review_link, reviewBody, reviewRating, ratingValue, bestRating, worstRating))
@@ -80,5 +81,5 @@ for review_link in links:
             except:
                 pass
 
-logging.debug(f"Done {host} - Reviews extracted: " + str(review_count))
+logging.debug(f"Done {host} - Reviews extracted: " + str(extracted_count) + " out of " + str())
 logging.debug("without Annotation: " + str(no_annotation))
