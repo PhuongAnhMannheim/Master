@@ -81,5 +81,5 @@ for review_link in links:
             except:
                 pass
 
-logging.debug(f"Done {host} - Reviews extracted: " + str(extracted_count) + " out of " + str())
+logging.debug(f"Done {host} - Reviews extracted: " + str(extracted_count) + " out of " + str(review_count))
 logging.debug("without Annotation: " + str(no_annotation))
