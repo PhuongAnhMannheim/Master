@@ -75,7 +75,7 @@ for i in list_test:
     xtest_tfidf_ngram =  tfidf_vect_ngram.transform(X_test)
     logging.debug("transformation into tfidf vectors done")
 
-    #Create a Binomial Classifier
+    #Create a Classifier
     clf = svm.SVC(kernel='linear')
     # Train the model using the training sets
     clf.fit(xtrain_tfidf_ngram, y_train)

@@ -11,9 +11,9 @@ import logging
 # %%
 
 # Input/ Output
-db_path = '../Data/test.db'
-db_name = 'test'
-log_path = '../Logs/test.log'
+db_path = '../Data/phonereviews.db'
+db_name = 'phonereviews'
+log_path = '../Logs/phoneReview.log'
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
 
