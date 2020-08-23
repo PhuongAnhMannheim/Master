@@ -55,7 +55,7 @@ c.execute("""
 
 # + {"pycharm": {"name": "#%%\n"}}
 with open(sites_input_path) as f:
-  domainList = f.readlines()
+    domainList = f.readlines()
 # print(domainList)
 
 # + {"pycharm": {"name": "#%%\n"}}
@@ -87,56 +87,56 @@ detectLang("Excelente9Chromecast \u00C3\u00A9 o aplicativo do Google para instal
 
 # + {"pycharm": {"name": "#%%\n"}}
 for item in phone_lst:
-        item_pattern = re.compile(item,re.IGNORECASE)
-        with gzip.open(review_input_path,"rt") as f:
-            i = 0
-            detected = 0
-            skipped = 0
-            not_taxo = 0
-            not_phone = 0
-            inserted = 0
-            failed_updates = 0
-            no_key_in_url = 0
-            # head = [next(f) for x in range(150000)]
-            # for line in head:
-            for line in iter(f.readline, ""):
-                i += 1
-                if not taxo_pattern.search(line):
-                    not_taxo += 1
-                    continue
-                match = split_pattern.match(line)
-                if match is None:
-                    skipped += 1
-                    continue
-                props = match.groups()
-                subj = props[0]
-                predicate = props[1]
-                obj = props[2]
-                source = props[3]
-                if item_pattern.search(source) or (any(url in source for url in domainList) and item_pattern.search(obj)):
-                    c.execute("INSERT OR IGNORE INTO PHONEREVIEWS (NODE, URL) VALUES (?,?);",(subj, source))
-                    update_query = "UPDATE PHONEREVIEWS SET "
-                    params = [obj, subj, source]
-                    if predicate.lower() == "http://schema.org/Review/reviewBody".lower() and detectLang(obj):
-                        update_query += "REVIEWBODY = ? "
-                    if predicate.lower() == "http://schema.org/Review/description".lower() and detectLang(obj):
-                        update_query += "REVIEWBODY = ? "
-                    if predicate.lower() == "http://schema.org/Review/reviewRating".lower():
-                        update_query += "RATING = ? "
-                    if predicate.lower() == "http://schema.org/Rating/ratingValue".lower():
-                        update_query += "REVIEWRATING = ? "
-                    if predicate.lower() == "http://schema.org/Rating/bestRating".lower():
-                        update_query += "BESTRATING = ? "
-                    if predicate.lower() == "http://schema.org/Rating/worstRating".lower():
-                        update_query += "WORSTRATING = ? "
-                    update_query += "WHERE NODE = ? AND URL = ?;"
-                    try:
-                        c.execute(update_query, params)
-                        conn.commit()
-                        inserted += 1
-                    except:
-                        # logging.debug("failed to execute for params " + str(update_query) + str(props))
-                        failed_updates += 1
+    item_pattern = re.compile(item,re.IGNORECASE)
+    with gzip.open(review_input_path,"rt") as f:
+        i = 0
+        detected = 0
+        skipped = 0
+        not_taxo = 0
+        not_phone = 0
+        inserted = 0
+        failed_updates = 0
+        no_key_in_url = 0
+        # head = [next(f) for x in range(150000)]
+        # for line in head:
+        for line in iter(f.readline, ""):
+            i += 1
+            if not taxo_pattern.search(line):
+                not_taxo += 1
+                continue
+            match = split_pattern.match(line)
+            if match is None:
+                skipped += 1
+                continue
+            props = match.groups()
+            subj = props[0]
+            predicate = props[1]
+            obj = props[2]
+            source = props[3]
+            if item_pattern.search(source) or (any(url in source for url in domainList) or item_pattern.search(obj)):
+                c.execute("INSERT OR IGNORE INTO PHONEREVIEWS (NODE, URL) VALUES (?,?);",(subj, source))
+                update_query = "UPDATE PHONEREVIEWS SET "
+                params = [obj, subj, source]
+                if predicate.lower() == "http://schema.org/Review/reviewBody".lower() and detectLang(obj):
+                    update_query += "REVIEWBODY = ? "
+                if predicate.lower() == "http://schema.org/Review/description".lower() and detectLang(obj):
+                    update_query += "REVIEWBODY = ? "
+                if predicate.lower() == "http://schema.org/Review/reviewRating".lower():
+                    update_query += "RATING = ? "
+                if predicate.lower() == "http://schema.org/Rating/ratingValue".lower():
+                    update_query += "REVIEWRATING = ? "
+                if predicate.lower() == "http://schema.org/Rating/bestRating".lower():
+                    update_query += "BESTRATING = ? "
+                if predicate.lower() == "http://schema.org/Rating/worstRating".lower():
+                    update_query += "WORSTRATING = ? "
+                update_query += "WHERE NODE = ? AND URL = ?;"
+                try:
+                    c.execute(update_query, params)
+                    conn.commit()
+                    inserted += 1
+                except:
+                    # logging.debug("failed to execute for params " + str(update_query) + str(props))
+                    failed_updates += 1
 
 logging.debug("detected " + str(detected) + ", inserted: " + str(inserted) +" lines out of " + str(i) + "; not in taxo: " + str(not_taxo))
 logging.debug("Done getting Review entries with Reviewbodies, descriptions or websites at the Object having phone or related words")
