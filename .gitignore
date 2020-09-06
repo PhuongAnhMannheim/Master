@@ -10,6 +10,8 @@ wandb
 Scraping/debug.log
 Scraping/geckodriver.log
 Scraping/result.txt
+Results
+
 
 
 # Created by https://www.gitignore.io/api/python,intellij+all

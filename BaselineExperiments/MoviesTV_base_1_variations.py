@@ -91,4 +91,5 @@ for i in list_test:
     logging.debug("Accuracy:" +  accuracy)
     logging.debug("Precision:" +  precision)
     logging.debug("F1:" + f1)
+    logging.debug(pd.crosstab(y_test, y_pred))
 
