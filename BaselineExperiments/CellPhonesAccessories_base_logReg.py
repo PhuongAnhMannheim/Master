@@ -1,20 +1,32 @@
 from sklearn.linear_model import LogisticRegression
 import gzip, pandas as pd, random, logging
-import numpy as np
+# import numpy as np
 from sklearn import model_selection, preprocessing, metrics
 from sklearn.model_selection import train_test_split
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+from imblearn.over_sampling import RandomOverSampler
 import json
+from collections import Counter
+
+
+# Input
+input_file = '../Data/reviews_Cell_Phones_and_Accessories_5.json.gz'
+log = '../Logs/cellphonebase1_bal.log'
+
+method = "LogisticRegression"
+feature = "CountVectorizer(uni, bi, tri)"
+balance = "RandomOverSampler"
+preprocess = "unpreprocessed"
 
 logger = logging.getLogger()
-fhandler = logging.FileHandler(filename='../Logs/cellphonelogRegression.log', mode='a')
+fhandler = logging.FileHandler(filename=log, mode='a')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 fhandler.setFormatter(formatter)
 logger.addHandler(fhandler)
 logger.setLevel(logging.DEBUG)
 
 data = []
-with gzip.open('../Data/reviews_Cell_Phones_and_Accessories_5.json.gz') as f:
+with gzip.open(input_file) as f:
     for l in f:
         data.append(json.loads(l.strip()))
 
@@ -23,6 +35,28 @@ df = pd.DataFrame.from_dict(data)
 target = df['overall']
 text = df['reviewText']
 
+logging.debug(f"RUN: Baseline, Cellphone, {feature}, {method}, {balance}, {preprocess}")
+
+# Feature Extraction: n-grams with TF-IDF
+# tfidf_vect_ngram = TfidfVectorizer(analyzer='word', token_pattern=r'\w{1,}', ngram_range=(2, 3), max_features=5000)
+# tfidf_vect_ngram.fit(text)
+# logging.debug("feature extractiion: n-grams + TF-IDF done")
+# xtrain_tfidf_ngram = tfidf_vect_ngram.transform(X_train)
+# xtest_tfidf_ngram = tfidf_vect_ngram.transform(X_test)
+# logging.debug("transformation into tfidf vectors done")
+
+cv = CountVectorizer(ngram_range=(1, 3))
+cv.fit(text)
+text_count = cv.transform(text)
+logging.debug(f"feature extraction: {feature} done")
+
+ros = RandomOverSampler(random_state=None)
+text_count_res, target_res = ros.fit_resample(text_count, target)
+logging.debug(f"Balancing: {balance} done")
+
+m = LogisticRegression(C=0.1, dual=False)
+logging.debug(f"classifier creation: {method} done")
+
 list_test = [0.1, 0.2, 0.3, 0.4, 0.5]
 for i in list_test:
     test_size = i
@@ -30,26 +64,13 @@ for i in list_test:
     logging.debug("test size: " + str(test_size))
     logging.debug("train size: " + str(train_size))
     # Split dataset into training set and test set
-    X_train, X_test, y_train, y_test = train_test_split(text, target, test_size = test_size, random_state=109)
+    X_train, X_test, y_train, y_test = train_test_split(text_count_res, target_res, test_size = test_size, random_state=109)
 
-    # label encode the target variable
-    encoder = preprocessing.LabelEncoder()
-    y_train = encoder.fit_transform(y_train)
-    y_test = encoder.fit_transform(y_test)
-    logging.debug("label encoding done")
+    logging.debug('Training target statistics: {}'.format(Counter(y_train), sorted(y_train)))
+    logging.debug('Testing target statistics: {}'.format(Counter(y_test), sorted(y_test)))
 
-    # Feature Extraction: n-grams with TF-IDF
-    tfidf_vect_ngram = TfidfVectorizer(analyzer='word', token_pattern=r'\w{1,}', ngram_range=(2,3), max_features=5000)
-    tfidf_vect_ngram.fit(text)
-    logging.debug("feature extractiion: n-grams + TF-IDF done")
-
-    xtrain_tfidf_ngram =  tfidf_vect_ngram.transform(X_train)
-    xtest_tfidf_ngram =  tfidf_vect_ngram.transform(X_test)
-    logging.debug("transformation into tfidf vectors done")
-
-    m = LogisticRegression(C=0.1, dual=False)
-    m.fit(xtrain_tfidf_ngram, y_train)
-    y_pred = m.predict(xtest_tfidf_ngram)
+    m.fit(X_train, y_train)
+    y_pred = m.predict(X_test)
     logging.debug("model building, training and prediction done")
 
     # Model Accuracy, how often is the classifier correct?
