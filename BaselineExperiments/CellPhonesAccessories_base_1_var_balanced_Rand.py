@@ -1,4 +1,4 @@
-import logging, gzip, json, pandas as pd
+import logging, gzip, json, pandas as pd, re
 from sklearn import model_selection, preprocessing, metrics
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
@@ -14,8 +14,8 @@ input = '../Data/reviews_Cell_Phones_and_Accessories_5.json.gz'
 log = '../Logs/cellphonebase1_bal.log'
 
 method = "MultinomialNB"
-feature = "CountVectorizer"
-balance = "SVMSMOTE"
+feature = "CountVectorizer(uni, bi)"
+balance = "RandomOverSampler"
 preprocess = "unpreprocessed"
 
 # Enable logging
@@ -38,24 +38,33 @@ text = df['reviewText']
 
 logging.debug(f"RUN: Baseline, Cellphone, {feature}, {method}, {balance}, {preprocess}")
 
+# REPLACE_WITH_SPACE = re.compile("(<br\s*/><br\s*/>)|(\-)|(\/)")
+# NO_SPACE = ""
+# SPACE = " "
+#
+# def preprocess_reviews(reviews):
+#     reviews = [REPLACE_WITH_SPACE.sub(SPACE, value) for index, value in reviews.items()]
+#     return reviews
+#
+# text_clean = preprocess(text)
+
 # Feature Extraction:
 # tfidf_vect = TfidfVectorizer(analyzer='word', token_pattern=r'\w{1,}')
 # tfidf_vect.fit(text)
 # text_tfidf = tfidf_vect.transform(text)
 # logging.debug("feature extractiion: BoW + TF-IDF done")
-cv = CountVectorizer()
+cv = CountVectorizer(ngram_range=(1, 2))
 cv.fit(text)
 text_count = cv.transform(text)
 logging.debug(f"feature extraction: {feature} done")
 
 # RandomUnderSampler
-# ros = RandomOverSampler(random_state=None)
+ros = RandomOverSampler(random_state=None)
 # smote = SMOTE()
-svmsmote = SVMSMOTE()
 # ada = ADASYN()
 # text_tfidf_res, target_res = rus.fit_resample(text_tfidf, target)
-# text_count_res, target_res = ros.fit_resample(text_count, target)
-text_count_res, target_res = svmsmote.fit_resample(text_count, target)
+text_count_res, target_res = ros.fit_resample(text_count, target)
+# text_count_res, target_res = svmsmote.fit_resample(text_count, target)
 logging.debug(f"Balancing: {balance} done")
 
 # Create a Binomial Classifier

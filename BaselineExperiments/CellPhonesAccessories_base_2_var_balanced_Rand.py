@@ -1,14 +1,22 @@
 import logging, gzip, json, pandas as pd
 from sklearn import model_selection, preprocessing, metrics
 from sklearn.model_selection import train_test_split
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.svm import LinearSVC, SVC
 from collections import Counter
 from imblearn.under_sampling import RandomUnderSampler
+from imblearn.over_sampling import RandomOverSampler, SMOTE, ADASYN, SVMSMOTE
+from sklearn.metrics import plot_confusion_matrix
+import matplotlib.pyplot as plt
 
 # Input
 input_file = '../Data/reviews_Cell_Phones_and_Accessories_5.json.gz'
 log_file = '../Logs/cellphonebase2_bal.log'
+
+method = "SVC"
+feature = "CountVectorizer(uni, bi, tri)"
+balance = "RandomOverSampler"
+preprocess = "unpreprocessed"
 
 # Enable logging
 logger = logging.getLogger()
@@ -27,48 +35,43 @@ df = pd.DataFrame.from_dict(data)
 target = df['overall']
 text = df['reviewText']
 
-logging.debug("RUN: Random Undersampler on training only")
+logging.debug(f"RUN: Baseline, Cellphone, {feature}, {method}, {balance}, {preprocess}")
+
+# Feature Extraction: Bag of Words with TF-IDF
+# tfidf_vect = TfidfVectorizer(analyzer='word', token_pattern=r'\w{1,}')
+# tfidf_vect.fit(text)
+# text_tfidf = tfidf_vect.transform(text)
+# logging.debug("feature extractiion: BoW + TF-IDF done")
+cv = CountVectorizer(ngram_range=(1, 3))
+cv.fit(text)
+text_count = cv.transform(text)
+logging.debug(f"feature extraction: {feature} done")
+
+# RandomUnderSampler
+# rus = RandomUnderSampler(random_state=0)
+ros = RandomOverSampler(random_state=None)
+text_count_res, target_res = ros.fit_resample(text_count, target)
+logging.debug(f"Balancing: {balance} done")
+
+
+# Create a Binomial Classifier
+clf = SVC(kernel='linear')
+logging.debug(f"classifier creation: {method} done")
+
 list_test = [0.1, 0.2, 0.3, 0.4, 0.5]
 for i in list_test:
     # Split dataset into training set and test set
     test_size = i
     train_size = 1 - i
-    X_train, X_test, y_train, y_test = train_test_split(text, target, test_size=i, random_state=109)
+    X_train, X_test, y_train, y_test = train_test_split(text_count_res, target_res, test_size=i, random_state=109)
 
-    # label encode the target variable
-    encoder = preprocessing.LabelEncoder()
-    y_train = encoder.fit_transform(y_train)
-    y_test = encoder.fit_transform(y_test)
-    logging.debug("label encoding done")
+    logging.debug('Training target statistics: {}'.format(Counter(y_train), sorted(y_train)))
+    logging.debug('Testing target statistics: {}'.format(Counter(y_test), sorted(y_test)))
 
-    # X_train.reshape(-1, 1)
-    # y_train.reshape(-1, 1)
-
-    # Feature Extraction: Bag of Words with TF-IDF
-    tfidf_vect_ngram = TfidfVectorizer(analyzer='word', token_pattern=r'\w{1,}', ngram_range=(2, 3), max_features=5000)
-    tfidf_vect_ngram.fit(text)
-    logging.debug("feature extractiion: n-grams + TF-IDF done")
-
-    # transform the training and validation data using tfidf vectorizer object
-    xtrain_tfidf_ngram = tfidf_vect_ngram.transform(X_train)
-    xtest_tfidf_ngram = tfidf_vect_ngram.transform(X_test)
-    logging.debug("transformation into tfidf vectors done")
-
-    # RandomUnderSampler
-    rus = RandomUnderSampler(random_state=0)
-    X_train_resampled, y_train_resampled = rus.fit_resample(xtrain_tfidf_ngram, y_train)
-    logging.debug("Training set:")
-    logging.debug(sorted(Counter(y_train_resampled).items()))
-    # X_test_resampled, y_test_resampled = rus.fit_resample(xtest_tfidf_ngram, y_test)
-    logging.debug("Test set:")
-    logging.debug(sorted(Counter(y_test).items()))
-
-    # Create a Binomial Classifier
-    clf = SVC(kernel='linear')
     # Train the model using the balanced training sets
-    clf.fit(X_train_resampled, y_train_resampled)
+    clf.fit(X_train, y_train)
     # Predict the response for test dataset
-    y_pred = clf.predict(xtest_tfidf_ngram)
+    y_pred = clf.predict(X_test)
     # logging.debug("model building, training and prediction done")
     # logging.debug('Training target statistics: {}'.format(Counter(y_train_resampled)))
     # logging.debug('Testing target statistics: {}'.format(Counter(y_test)))
@@ -85,3 +88,20 @@ for i in list_test:
     logging.debug("Precision:" + precision)
     logging.debug("F1:" + f1)
     logging.debug(pd.crosstab(y_test, y_pred))
+
+    # Visualization of Confusion Matrix and saving
+    plt.rcParams['figure.facecolor'] = 'white'
+    title = f"Confusion matrix - Baseline({method}, {feature}, {balance}, {preprocess}, {train_size}_{test_size})"
+    disp = plot_confusion_matrix(clf, X_test, y_test,
+                                 display_labels=[1.0, 2.0, 3.0, 4.0, 5.0],
+                                 cmap=plt.cm.Blues)
+    disp.ax_.set_title(title)
+    plt.savefig(f'Results/SVM_Cellphone/{title}.png', bbox_inches='tight')
+
+    title_norm = title + "_normalize"
+    disp_norm = plot_confusion_matrix(clf, X_test, y_test,
+                                      display_labels=[1.0, 2.0, 3.0, 4.0, 5.0],
+                                      cmap=plt.cm.Blues,
+                                      normalize='true')
+    disp_norm.ax_.set_title(title_norm)
+    plt.savefig(f'Results/SVM_Cellphone/{title_norm}.png', bbox_inches='tight')

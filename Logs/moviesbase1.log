@@ -60,3 +60,5 @@
 2020-05-18 10:47:31,576 - root - DEBUG - Accuracy:0.5339816463175406
 2020-05-18 10:47:31,576 - root - DEBUG - Precision:0.3162575184424143
 2020-05-18 10:47:31,576 - root - DEBUG - F1:0.14050461879754672
+2020-09-07 11:15:43,637 - root - DEBUG - RUN: Baseline, Movies, CountVectorizer(uni, bi, tri), MultinomialNB, RandomUnderSampler, unpreprocessed
+2020-09-07 11:16:58,773 - root - DEBUG - RUN: Baseline, Movies, CountVectorizer(uni, bi, tri), MultinomialNB, RandomUnderSampler, unpreprocessed
