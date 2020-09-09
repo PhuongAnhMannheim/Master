@@ -99,3 +99,17 @@ for i in list_test:
                                       normalize='true')
     disp_norm.ax_.set_title(title_norm)
     plt.savefig(f'Results/type1_Movie/{title_norm}.png', bbox_inches='tight')
+
+    # TODO: own vocabulary based on the most frequent words
+    # def mytokenizer(text):
+    #     return text.split()
+    #
+    #
+    # from sklearn.feature_extraction.text import CountVectorizer
+    #
+    # corpus = ['www.google.com www.google.com', 'www.google.com www.facebook.com', 'www.google.com', 'www.facebook.com']
+    # vocab = {'www.google.com': 0, 'www.facebook.com': 1}
+    # vectorizer = CountVectorizer(vocabulary=vocab, tokenizer=mytokenizer)
+    # X = vectorizer.fit_transform(corpus)
+    # print(vectorizer.get_feature_names())
+    # print(X.toarray())
