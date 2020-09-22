@@ -11,7 +11,7 @@ Scraping/debug.log
 Scraping/geckodriver.log
 Scraping/result.txt
 Results
-
+.ipynb_checkpoints
 
 
 # Created by https://www.gitignore.io/api/python,intellij+all

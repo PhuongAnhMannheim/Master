@@ -49,8 +49,8 @@ logging.debug(f"feature extraction: {feature} done")
 
 # RandomUnderSampler
 # rus = RandomUnderSampler(random_state=0)
-ros = RandomOverSampler(random_state=None)
-text_count_res, target_res = ros.fit_resample(text_count, target)
+rus = RandomUnderSampler(random_state=None)
+text_count_res, target_res = rus.fit_resample(text_count, target)
 logging.debug(f"Balancing: {balance} done")
 
 
