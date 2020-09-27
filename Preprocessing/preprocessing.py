@@ -6,6 +6,7 @@ import html
 import nltk
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 from nltk.corpus import stopwords
+from nltk.stem import PorterStemmer
 from textblob import TextBlob
 
 stops = stopwords.words('english')
@@ -80,8 +81,8 @@ def remove_stopwords(t):
     return new_review
 
 
-def lemmatize_with_pos(sentence):
-    sent = TextBlob(sentence)
+def lemmatize_with_pos(t):
+    sent = TextBlob(t)
     tag_dict = {"J": 'a',
                 "N": 'n',
                 "V": 'v',
@@ -89,6 +90,16 @@ def lemmatize_with_pos(sentence):
     words_and_tags = [(w, tag_dict.get(pos[0], 'n')) for w, pos in sent.tags]
     lemmatized_list = [wd.lemmatize(tag) for wd, tag in words_and_tags]
     return " ".join(lemmatized_list)
+
+
+def stem(t):
+    words = nltk.word_tokenize(t)
+    new_words = []
+    ps = PorterStemmer()
+    for word in words:
+        new_words.append(ps.stem(word))
+    new_review = TreebankWordDetokenizer().detokenize(new_words)
+    return new_review
 
 
 def preprocess_reviews(reviews):
@@ -120,10 +131,12 @@ def preprocess_reviews(reviews):
     # lowercase, except all caps
     reviews = [to_lowercase(line) for line in reviews]
 
-    reviews = [lemmatize_with_pos(line) for line in reviews]
-
     # stopword removal
     reviews = [remove_stopwords(line) for line in reviews]
+
+    # lemmatizing or stemming
+    # reviews = [lemmatize_with_pos(line) for line in reviews]
+    reviews = [stem(line) for line in reviews]
 
     # remove multiple white spaces
     reviews = [remove_extra_whitespaces(line) for line in reviews]

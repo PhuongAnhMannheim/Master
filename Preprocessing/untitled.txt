@@ -1,8 +1,0 @@
-ideen / zu lösende Probleme: 
-
-- Bereinigen der unterschiedlichen Ratingsysteme
-
-- überlappende Texte -> nur eins behalten
-
-- manche (Best, WorstRating) müssen nur noch angereichert werden
-
