@@ -85,7 +85,7 @@ getItemList(driver.page_source)
 
 for link in link_list:
 	page = 1
-	print("Scraping:\n" + link)
+	print("03_Scraping:\n" + link)
 	driver.get(link)
 	# find the 'Ratings and Reviews' button based on its css path
 	button = driver.find_element_by_css_selector('#ui-id-3')

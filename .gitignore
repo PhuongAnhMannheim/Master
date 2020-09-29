@@ -3,15 +3,17 @@ venv
 reviews.db
 git
 Logs
-Intermediary/.ipynb_checkpoints
-Extraction_Profiling/.ipynb_checkpoints
+02_Intermediary/.ipynb_checkpoints
+01_Extraction/.ipynb_checkpoints
+01_Extraction
 Profiling/.ipynb_checkpoints/
 wandb
-Scraping/debug.log
-Scraping/geckodriver.log
-Scraping/result.txt
+03_Scraping/debug.log
+03_Scraping/geckodriver.log
+03_Scraping/result.txt
 Results
 .ipynb_checkpoints
+Figures
 
 
 # Created by https://www.gitignore.io/api/python,intellij+all

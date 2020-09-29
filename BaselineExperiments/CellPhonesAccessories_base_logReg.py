@@ -37,7 +37,7 @@ text = df['reviewText']
 
 logging.debug(f"RUN: Baseline, Cellphone, {feature}, {method}, {balance}, {preprocess}")
 
-# Feature Extraction: n-grams with TF-IDF
+# Feature 01_Extraction: n-grams with TF-IDF
 # tfidf_vect_ngram = TfidfVectorizer(analyzer='word', token_pattern=r'\w{1,}', ngram_range=(2, 3), max_features=5000)
 # tfidf_vect_ngram.fit(text)
 # logging.debug("feature extractiion: n-grams + TF-IDF done")

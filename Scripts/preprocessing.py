@@ -101,6 +101,10 @@ def stem(t):
     new_review = TreebankWordDetokenizer().detokenize(new_words)
     return new_review
 
+def remove_punct_and_nonascii(t):
+    t = t.replace('[^a-zA-Z0-9', ' ')
+    return t
+
 
 def preprocess_reviews(reviews):
     # De-noise
