@@ -9,7 +9,7 @@ import logging
 import pandas as pd
 
 # Input/ Output
-db_path = '../Data/moviewreviews.db'
+db_path = '../Data/moviereviews.db'
 db_name = 'moviereviews'
 log_path = '../Logs/movieReviews.log'
 conn = sqlite3.connect(db_path)

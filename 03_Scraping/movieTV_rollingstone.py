@@ -7,7 +7,7 @@ import sqlite3
 import logging
 
 log_path = '../Logs/movieReviews.log'
-db_path = '../Data/moviewreviews.db'
+db_path = '../Data/moviereviews.db'
 db_name = 'moviereviews'
 conn = sqlite3.connect(db_path)
 c = conn.cursor()

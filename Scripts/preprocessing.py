@@ -4,13 +4,75 @@ import unidecode
 import contractions
 import html
 import nltk
+import pandas as pd
+from collections import Counter
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from textblob import TextBlob
 
-stops = stopwords.words('english')
-stops = [e for e in stops if e not in ('but', 'no', 'not')]
+
+stop = stopwords.words('english')
+stops = [e for e in stop if e not in ('but', 'no', 'not', 'very')]
+web_dict = {'t2morrow': 'tomorrow',
+        'w/': 'with',
+        'w/o': 'with no',
+        'gr8t': 'great',
+        'lol': 'laughing out loud',
+        'btw': 'by the way',
+        'lmk': 'let me know',
+        'tbh': 'to be honest',
+        'imho': 'in my humble opinion',
+        'irl': 'in real life',
+        'tldr': 'too long did not write',
+        'asap': 'as soon as possible',
+        'thx': 'thanks',
+        'aka': 'also known as',
+        'b/c': 'because',
+        'c&p': 'copy and paste',
+        'cu': 'see you',
+        'diy': 'do it yourself',
+        'eod': 'end of discusion',
+        'faq': 'frequently asked questions',
+        'hth': 'hope this helps',
+        'idk': 'i do not know',
+        'imo': 'in my opinion',
+        'n/a': 'not available',
+        'omg': 'oh my god',
+        'wtf': 'what the fuck',
+        'wth': 'what the hell',
+        'fiy': 'for your information',
+        'fb': 'facebook',
+        'hifw': 'how i feel when',
+        'tfw': 'the feeling when',
+        'jk' : 'just kidding',
+        'omdb': 'over my dead body',
+        'pov': 'point of view',
+        'ftw': 'for the win',
+        'ynk': 'you never know',
+        'srsly': 'seriously',
+        'nsfl': 'not save for life',
+        'ppl': 'people',
+        'luv': 'love'}
+
+
+def check_upper(df):
+    df['upper'] = df['text_prep'].apply(lambda x: [word for word in x if (word.isupper() and word != 'I')])
+    all_upper = []
+    count = 0
+    for row in df['upper']:
+        count += len(row)
+        all_upper.extend(row)
+    corpus_counts = Counter(all_upper)
+    most_common = pd.DataFrame(corpus_counts.most_common(100), columns=['Word', 'Frequency'])
+    print('Amount of All Capitals words:', count)
+    print(most_common[0:50])
+
+
+def remove_html(df):
+    df['text_prep'] = df.text.apply(lambda x: BeautifulSoup(x, "html.parser").get_text())
+    print('removed html tags')
+    return df
 
 
 def strip_html(t):
@@ -18,33 +80,53 @@ def strip_html(t):
     return soup.get_text()
 
 
-def remove_between_square_brackets(t):
-    return re.sub(r'\[[^]]*\]', '', t)
+def remove_between_square_brackets(df):
+    # return re.sub(r'\[[^]]*\]', '', t)
+    df['text_prep'] = df.text_prep.apply(lambda x: re.sub(r'\[[^]]*\]', '', x))
+    print('removed content between square brackets')
+    return df
+
+def remove_between_angle_brackets(df):
+    # return re.sub(r'<[^>]+>', '', t)
+    df['text_prep'] = df.text_prep.apply(lambda x: re.sub(r'<[^>]+>', '', x))
+    print('removed content between angle brackets')
+    return df
 
 
-def remove_between_angle_brackets(t):
-    return re.sub(r'<[^>]+>', '', t)
+def remove_accented_chars(df):
+    # return unidecode.unidecode(t)
+    df['text_prep'] = df.text_prep.apply(lambda x: unidecode.unidecode(x))
+    print('removed accented characters')
+    return df
+
+def replace_contractions(df):
+    # return contractions.fix(t)
+    # df['text_prep'] = df.text_prep.apply(lambda x: nltk.word_tokenize(contractions.fix(TreebankWordDetokenizer().detokenize(x))))
+    df['text_prep'] = df.text_prep.apply(lambda x: contractions.fix(x))
+    print('contractions expansion done')
+    return df
 
 
-def remove_accented_chars(t):
-    return unidecode.unidecode(t)
+def remove_numbers(df):
+    # return re.sub(r'([a-zA-Z]*[0-9])|(\S*[0-9]\S)|([0-9])', '', t)
+    # df['text_prep'] = df.text_prep.apply(lambda x: re.sub(r'([a-zA-Z]*[0-9])|(\S*[0-9]\S)|([0-9])', '', x))
+    df['text_prep'] = df.text_prep.apply(lambda x: nltk.word_tokenize(re.sub(r'[0-9]', ' ', TreebankWordDetokenizer().detokenize(x))))
+    print('number removal done')
+    return df
 
 
-def replace_contractions(t):
-    return contractions.fix(t)
+def remove_hyperlinks(df):
+    # return re.sub(r'http\S+', '', t)
+    df['text_prep'] = df.text_prep.apply(lambda x: re.sub(r'http\S+', '', x))
+    print('removed hyperlinks')
+    return df
 
 
-def remove_numbers(t):
-    return re.sub(r'([a-zA-Z]*[0-9])|(\S*[0-9]\S)|([0-9])', '', t)
-
-
-def remove_hyperlinks(t):
-    return re.sub(r'http\S+', '', t)
-
-
-def unescape(t):
-    return html.unescape(t)
-
+def unescape(df):
+    # return html.unescape(t)
+    df['text_prep'] = df.text_prep.apply(lambda x: html.unescape(x))
+    print('html unescape done')
+    return df
 
 def remove_punctuation(t):
     return re.sub(r'([^\w!)])\1{1,}|(_{2,})|([^\w\s])', ' ', t)
@@ -54,16 +136,9 @@ def remove_extra_whitespaces(t):
     return re.sub(r'[\s]{2,}', ' ', t)
 
 
-# experiment what is better 1. lowercase all 2. only lowercase if all caps
 def to_lowercase(t):
     words = nltk.word_tokenize(t)
     new_words = []
-    # for word in words:
-    #     if word.isupper():
-    #         new_words.append(word)
-    #     else:
-    #         new_word = word.lower()
-    #         new_words.append(new_word)
     for word in words:
         new_word = word.lower()
         new_words.append(new_word)
@@ -71,14 +146,39 @@ def to_lowercase(t):
     return new_review
 
 
-def remove_stopwords(t):
-    words = nltk.word_tokenize(t)
-    new_words = []
-    for word in words:
-        if word not in stops:
-            new_words.append(word)
-    new_review = TreebankWordDetokenizer().detokenize(new_words)
-    return new_review
+def to_lower(df):
+    print('######## LOWERCASING STATISTICS')
+    check_upper(df)
+    df['text_prep'] = df['text_prep'].apply(lambda x: [word.lower() for word in x])
+    print('lowercasing done')
+    return df
+
+
+def get_pos(df):
+    df['pos'] = df.text_prep.apply(lambda x: nltk.pos_tag(x))
+    print('pos tagging done')
+    return df
+
+
+def to_token(df):
+    df['text_prep'] = df['text_prep'].apply(nltk.word_tokenize)
+    print('tokenization done')
+    return df
+
+
+def transform_abbr(df):
+    for text_prep in df['text_prep']:
+        for i, word in enumerate(text_prep):
+            if word in web_dict.keys():
+                text_prep[i] = web_dict[word]
+    print('abbreviation transformation done')
+    return df
+
+
+def remove_stopwords(df):
+    df['text_prep'] = df['text_prep'].apply(lambda x: [word for word in x if word not in stops])
+    print('stopword removal done')
+    return df
 
 
 def lemmatize_with_pos(t):
@@ -92,48 +192,54 @@ def lemmatize_with_pos(t):
     return " ".join(lemmatized_list)
 
 
-def stem(t):
-    words = nltk.word_tokenize(t)
-    new_words = []
+def stem(df):
+    # words = nltk.word_tokenize(t)
+    # new_words = []
     ps = PorterStemmer()
-    for word in words:
-        new_words.append(ps.stem(word))
-    new_review = TreebankWordDetokenizer().detokenize(new_words)
-    return new_review
+    # for word in words:
+    #     new_words.append(ps.stem(word))
+    # new_review = TreebankWordDetokenizer().detokenize(new_words)
+    # return new_review
+    df['text_prep'] = df['text_prep'].apply(lambda x: [ps.stem(token)for token in x])
+    print('port stemming done')
+    return df
 
-def remove_punct_and_nonascii(t):
-    t = t.replace('[^a-zA-Z0-9', ' ')
-    return t
 
+def remove_punct_and_nonascii(df):
+    # t = t.replace('[^a-zA-Z0-9', ' ')
+    # return t
+    df['text_prep'] = df.text_prep.apply(lambda x: nltk.word_tokenize(re.sub('[^a-zA-Z0-9]', ' ', TreebankWordDetokenizer().detokenize(x))))
+    print('punctuation and non-ascii removal done')
+    return df
 
 def preprocess_reviews(reviews):
     # De-noise
     # - remove unnecessary space and <br>, HTML tags
-    reviews = [strip_html(line) for line in reviews]
-    reviews = [remove_between_square_brackets(line) for line in reviews]
-    reviews = [remove_between_angle_brackets(line) for line in reviews]
+    reviews = [strip_html(line) for line in reviews] # done
+    reviews = [remove_between_square_brackets(line) for line in reviews] # done
+    reviews = [remove_between_angle_brackets(line) for line in reviews] # done
 
     # remove weblinks
-    reviews = [remove_hyperlinks(line) for line in reviews]
+    reviews = [remove_hyperlinks(line) for line in reviews] #done
 
     # - spacing after .,-
     # reviews = [re.sub(r'(?<=[.,-])(?=[^\s])', r' ', line) for line in reviews]
 
     # - standardising of lettering, e.g. cafe instead of café
-    reviews = [unidecode.unidecode(line) for line in reviews]
-    reviews = [unescape(line) for line in reviews]
+    reviews = [unidecode.unidecode(line) for line in reviews] # done
+    reviews = [unescape(line) for line in reviews] # done
 
     # Expand contractions
-    reviews = [replace_contractions(line) for line in reviews]
+    reviews = [replace_contractions(line) for line in reviews] #done
 
     # remove numbers and connected number units,
-    reviews = [remove_numbers(line) for line in reviews]
+    reviews = [remove_numbers(line) for line in reviews] #done
 
     # remove multiple special characters expect !
-    reviews = [remove_punctuation(line) for line in reviews]
+    reviews = [remove_punctuation(line) for line in reviews] #done
 
     # lowercase, except all caps
-    reviews = [to_lowercase(line) for line in reviews]
+    reviews = [to_lowercase(line) for line in reviews] #done
 
     # stopword removal
     reviews = [remove_stopwords(line) for line in reviews]
@@ -143,5 +249,5 @@ def preprocess_reviews(reviews):
     reviews = [stem(line) for line in reviews]
 
     # remove multiple white spaces
-    reviews = [remove_extra_whitespaces(line) for line in reviews]
+    reviews = [remove_extra_whitespaces(line) for line in reviews] # not needed
     return reviews

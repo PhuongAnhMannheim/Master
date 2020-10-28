@@ -10,6 +10,8 @@ def load_from_db(db_path, db_name):
     # db_name = 'phonereviews'
     conn = sqlite3.connect(db_path)
     df = pd.read_sql_query("SELECT * from " + str(db_name), conn)
+    df = df.drop(['RATING'], axis=1)
+    df.columns = ['NODE', 'URL', 'text', 'REVIEWRATING', 'BESTRATING', 'WORSTRATING']
     return df
 
 
@@ -125,51 +127,51 @@ def load_merged_data(schema_link, amazon_link, schema_per_class, amazon_per_clas
     return df_all
 
 
-def load_sampled_amazon(amazon_link, amazon_per_class):
-    ama_df = pd.read_pickle(amazon_link)
-    ama_df_1 = ama_df[ama_df['label'] == 1.0].values.tolist()
-    ama_df_2 = ama_df[ama_df['label'] == 2.0].values.tolist()
-    ama_df_3 = ama_df[ama_df['label'] == 3.0].values.tolist()
-    ama_df_4 = ama_df[ama_df['label'] == 4.0].values.tolist()
-    ama_df_5 = ama_df[ama_df['label'] == 5.0].values.tolist()
+def load_sampled(link, per_class):
+    df = pd.read_pickle(link)
+    df_1 = df[df['label'] == 1.0].values.tolist()
+    df_2 = df[df['label'] == 2.0].values.tolist()
+    df_3 = df[df['label'] == 3.0].values.tolist()
+    df_4 = df[df['label'] == 4.0].values.tolist()
+    df_5 = df[df['label'] == 5.0].values.tolist()
 
     try:
         random.seed(123)
-        adf1 = random.sample(ama_df_1, amazon_per_class)
+        adf1 = random.sample(df_1, per_class)
     except ValueError:
         random.seed(123)
-        adf1 = random.choices(ama_df_1, k=amazon_per_class)
+        adf1 = random.choices(df_1, k=per_class)
     try:
         random.seed(123)
-        adf2 = random.sample(ama_df_2, amazon_per_class)
+        adf2 = random.sample(df_2, per_class)
     except ValueError:
         random.seed(123)
-        adf2 = random.choices(ama_df_2, k=amazon_per_class)
+        adf2 = random.choices(df_2, k=per_class)
     try:
         random.seed(123)
-        adf3 = random.sample(ama_df_3, amazon_per_class)
+        adf3 = random.sample(df_3, per_class)
     except ValueError:
         random.seed(123)
-        adf3 = random.choices(ama_df_3, k=amazon_per_class)
+        adf3 = random.choices(df_3, k=per_class)
     try:
         random.seed(123)
-        adf4 = random.sample(ama_df_4, amazon_per_class)
+        adf4 = random.sample(df_4, per_class)
     except ValueError:
         random.seed(123)
-        adf4 = random.choices(ama_df_4, k=amazon_per_class)
+        adf4 = random.choices(df_4, k=per_class)
     try:
         random.seed(123)
-        adf5 = random.sample(ama_df_5, amazon_per_class)
+        adf5 = random.sample(df_5, per_class)
     except ValueError:
         random.seed(123)
-        adf5 = random.choices(ama_df_5, k=amazon_per_class)
+        adf5 = random.choices(df_5, k=per_class)
     adf11 = pd.DataFrame(adf1)
     adf12 = pd.DataFrame(adf2)
     adf13 = pd.DataFrame(adf3)
     adf14 = pd.DataFrame(adf4)
     adf15 = pd.DataFrame(adf5)
-    amazon = pd.concat([adf11, adf12, adf13, adf14, adf15], ignore_index=True)
-    df_all = amazon[[0, 1]]
+    df_all = pd.concat([adf11, adf12, adf13, adf14, adf15], ignore_index=True)
+    df_all = df_all[[0, 1]]
     df_all.columns = ['text', 'label']
     return df_all
 

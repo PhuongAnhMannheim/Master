@@ -73,7 +73,7 @@ for review_link in links:
             ratingValue = review.find('meta', itemprop='ratingValue')['content']
             bestRating = review.find('meta', itemprop='bestRating')['content']
             worstRating = review.find('meta', itemprop='worstRating')['content']
-            reviewRating = ''
+            reviewRating = 'already included'
             c.execute(
                 f"INSERT OR IGNORE INTO {db_name} (NODE, URL, REVIEWBODY, RATING, REVIEWRATING, BESTRATING, WORSTRATING) VALUES (?,?,?,?,?,?,?);",
                 (node, review_link, reviewBody, str(reviewRating), ratingValue, bestRating, worstRating))
