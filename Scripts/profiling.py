@@ -115,6 +115,16 @@ def get_num_perc(df):
     print('Numerics as percentage of all words in the corpus: {:.2%} '.format(sum(df.numerics_mix) / sum(df.word_count)))
 
 
+def get_prep_summary(df, total):
+    print('PREPROCESSING SUMMARY')
+    print('The number of numerics: {}'.format(sum(df.numerics_mix)))
+    print('Numerics as percentage: {:.2%} '.format(sum(df.numerics_mix) / total))
+    print('The number of punctuation and non-ascii: {}'.format(sum(df.punct_non_ascii)))
+    print('Punctuation and non-ascii as percentage: {:.2%} '.format(sum(df.punct_non_ascii) / total))
+    print('The number of stop words: {}'.format(sum(df.stopwords)))
+    print('Stop words as percentage: {:.2%} '.format(sum(df.stopwords)/total))
+
+
 def get_review_count(df):
     print("######## Total: ")
     print("Amount of reviews: ", len(df))
@@ -136,6 +146,17 @@ def get_shortest_review(df):
     print('The shortest review text in our sample has {} words.'.format(min(df['word_count'])))
     print('Review text with the shortest length of {} word appearing {} times.'.format(min(df['word_count']), len(shortest_t)))
     print(shortest_t.text, shortest_t.label)
+
+
+def get_token_count(df):
+    df['token_count'] = df.text_prep.apply(lambda x: len(x))
+    token_count = sum(df.token_count)
+    print('Token Count: ', token_count)
+
+
+def get_total_token_count(df):
+    df['token_count'] = df.text_prep.apply(lambda x: len(x))
+    return sum(df.token_count)
 
 
 def get_word_length_dist(df, dataname, log):
@@ -173,6 +194,7 @@ def show_lang_dist(df, filename, title, eng):
     plt.rcParams.update({"figure.facecolor": "white"})
     fig.savefig(f"../Figures/{filename}.png", bbox_inches='tight', dpi=300)
     plt.show()
+
 
 def show_rating_dist(df, filename, title):
     # e.g. amazon_cell_class_dist_raw

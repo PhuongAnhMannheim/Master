@@ -10,6 +10,7 @@ from nltk.tokenize.treebank import TreebankWordDetokenizer
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from textblob import TextBlob
+from Scripts import profiling as pf
 
 
 stop = stopwords.words('english')
@@ -53,7 +54,12 @@ web_dict = {'t2morrow': 'tomorrow',
         'srsly': 'seriously',
         'nsfl': 'not save for life',
         'ppl': 'people',
-        'luv': 'love'}
+        'luv': 'love',
+        'luvin': 'loving',
+        'luvin': 'loving',
+        'couldnet': 'could not',
+        'dont': 'do not'
+}
 
 
 def check_upper(df):
@@ -67,6 +73,11 @@ def check_upper(df):
     most_common = pd.DataFrame(corpus_counts.most_common(100), columns=['Word', 'Frequency'])
     print('Amount of All Capitals words:', count)
     print(most_common[0:50])
+
+
+def detokenize(df):
+    df['text_prep'] = df.text_prep.apply(lambda x: TreebankWordDetokenizer().detokenize(x))
+    return df
 
 
 def remove_html(df):
@@ -111,13 +122,16 @@ def remove_numbers(df):
     # return re.sub(r'([a-zA-Z]*[0-9])|(\S*[0-9]\S)|([0-9])', '', t)
     # df['text_prep'] = df.text_prep.apply(lambda x: re.sub(r'([a-zA-Z]*[0-9])|(\S*[0-9]\S)|([0-9])', '', x))
     df['text_prep'] = df.text_prep.apply(lambda x: nltk.word_tokenize(re.sub(r'[0-9]', ' ', TreebankWordDetokenizer().detokenize(x))))
+    pattern = re.compile(r'([a-zA-Z]*[0-9])|(\S*[0-9]\S)|([0-9])')
+    df['numerics_mix'] = df['text'].apply(lambda x: len([x for x in nltk.word_tokenize(x) if pattern.findall(x)]))
     print('number removal done')
+    pf.get_token_count(df)
     return df
 
 
 def remove_hyperlinks(df):
     # return re.sub(r'http\S+', '', t)
-    df['text_prep'] = df.text_prep.apply(lambda x: re.sub(r'http\S+', '', x))
+    df['text_prep'] = df.text_prep.apply(lambda x: re.sub(r'http\S+|www.\S+', '', x))
     print('removed hyperlinks')
     return df
 
@@ -128,13 +142,21 @@ def unescape(df):
     print('html unescape done')
     return df
 
+
+def remove_lang_ind(df):
+    df['text_prep'] = df.text_prep.apply(lambda x: re.sub(r'(@.{2})\-.{2}|(@.{2})', '', x))
+    print('language indicator removal done')
+    return df
+
+
 def remove_punctuation(t):
     return re.sub(r'([^\w!)])\1{1,}|(_{2,})|([^\w\s])', ' ', t)
 
 
-def remove_extra_whitespaces(t):
-    return re.sub(r'[\s]{2,}', ' ', t)
-
+def remove_whitespaces(df):
+    df['text_prep'] = df['text_prep'].apply(lambda x: x.replace('\n', ' '))
+    print('white space removal done')
+    return df
 
 def to_lowercase(t):
     words = nltk.word_tokenize(t)
@@ -155,7 +177,8 @@ def to_lower(df):
 
 
 def get_pos(df):
-    df['pos'] = df.text_prep.apply(lambda x: nltk.pos_tag(x))
+    # df['pos'] = df.text_prep.apply(lambda x: nltk.pos_tag(x))
+    df['pos'] = nltk.pos_tag_sents(df.text_prep)
     print('pos tagging done')
     return df
 
@@ -177,7 +200,9 @@ def transform_abbr(df):
 
 def remove_stopwords(df):
     df['text_prep'] = df['text_prep'].apply(lambda x: [word for word in x if word not in stops])
+    df['stopwords'] = df['text'].apply(lambda x: len([x for x in nltk.word_tokenize(x) if x in stops]))
     print('stopword removal done')
+    pf.get_token_count(df)
     return df
 
 
@@ -209,45 +234,9 @@ def remove_punct_and_nonascii(df):
     # t = t.replace('[^a-zA-Z0-9', ' ')
     # return t
     df['text_prep'] = df.text_prep.apply(lambda x: nltk.word_tokenize(re.sub('[^a-zA-Z0-9]', ' ', TreebankWordDetokenizer().detokenize(x))))
+    pattern = re.compile(r'[^a-zA-Z0-9]')
+    df['punct_non_ascii'] = df['text'].apply(lambda x: len([x for x in nltk.word_tokenize(x) if pattern.findall(x)]))
     print('punctuation and non-ascii removal done')
+    pf.get_token_count(df)
     return df
 
-def preprocess_reviews(reviews):
-    # De-noise
-    # - remove unnecessary space and <br>, HTML tags
-    reviews = [strip_html(line) for line in reviews] # done
-    reviews = [remove_between_square_brackets(line) for line in reviews] # done
-    reviews = [remove_between_angle_brackets(line) for line in reviews] # done
-
-    # remove weblinks
-    reviews = [remove_hyperlinks(line) for line in reviews] #done
-
-    # - spacing after .,-
-    # reviews = [re.sub(r'(?<=[.,-])(?=[^\s])', r' ', line) for line in reviews]
-
-    # - standardising of lettering, e.g. cafe instead of café
-    reviews = [unidecode.unidecode(line) for line in reviews] # done
-    reviews = [unescape(line) for line in reviews] # done
-
-    # Expand contractions
-    reviews = [replace_contractions(line) for line in reviews] #done
-
-    # remove numbers and connected number units,
-    reviews = [remove_numbers(line) for line in reviews] #done
-
-    # remove multiple special characters expect !
-    reviews = [remove_punctuation(line) for line in reviews] #done
-
-    # lowercase, except all caps
-    reviews = [to_lowercase(line) for line in reviews] #done
-
-    # stopword removal
-    reviews = [remove_stopwords(line) for line in reviews]
-
-    # lemmatizing or stemming
-    # reviews = [lemmatize_with_pos(line) for line in reviews]
-    reviews = [stem(line) for line in reviews]
-
-    # remove multiple white spaces
-    reviews = [remove_extra_whitespaces(line) for line in reviews] # not needed
-    return reviews
