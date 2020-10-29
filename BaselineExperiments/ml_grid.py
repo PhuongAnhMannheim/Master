@@ -8,7 +8,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.svm import SVC, SVR
 
-amazon_link = '../Data/amazon_movie.pkl'
+amazon_link = '../Data/amazon_phone.pkl'
 
 # ToDo: reference to module
 # from Scripts import loading as dl
@@ -57,14 +57,14 @@ def load_sampled(link, per_class):
     adf14 = pd.DataFrame(adf4)
     adf15 = pd.DataFrame(adf5)
     df_all = pd.concat([adf11, adf12, adf13, adf14, adf15], ignore_index=True)
-    df_all = df_all[[0, 1]]
-    df_all.columns = ['text', 'label']
+    df_all = df_all[[2, 1]]
+    df_all.columns = ['text_prep', 'label']
     print(f'{per_class} reviews per class from {link} loaded')
     return df_all
 
 
 df = load_sampled(amazon_link, 5000)
-df.head()
+print(df.head())
 target = df.label
 text = df.text_prep
 

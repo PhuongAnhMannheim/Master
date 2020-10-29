@@ -171,8 +171,8 @@ def load_sampled(link, per_class):
     adf14 = pd.DataFrame(adf4)
     adf15 = pd.DataFrame(adf5)
     df_all = pd.concat([adf11, adf12, adf13, adf14, adf15], ignore_index=True)
-    df_all = df_all[[0, 1]]
-    df_all.columns = ['text', 'label']
+    df_all = df_all[[2, 1]]
+    df_all.columns = ['text_prep', 'label']
     print(f'{per_class} reviews per class from {link} loaded')
     return df_all
 
