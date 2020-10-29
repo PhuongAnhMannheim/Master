@@ -73,6 +73,7 @@ tfidf = TfidfVectorizer()
 param_grid = [{'vect__ngram_range': [(1, 1)],
                'clf__penalty': ['l1', 'l2'],
                'clf__C': [0.1, 1.0, 10.0],
+               'clf__solver': ['newton-cg', 'sag', 'saga', 'lbfgs'],
                'clf__multi_class': ['ovr', 'multinomial']
                }]
 lr_tfidf = Pipeline([('vect', tfidf),
