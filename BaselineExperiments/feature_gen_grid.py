@@ -1,7 +1,11 @@
+
 import pandas as pd
 import random
-from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.model_selection import train_test_split, GridSearchCV, StratifiedKFold
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import LogisticRegression, SGDClassifier
+from sklearn.svm import SVC, SVR
 from sklearn.pipeline import Pipeline
 
 amazon_link = '../Data/amazon_phone.pkl'
@@ -53,42 +57,117 @@ def load_sampled(link, per_class):
     adf14 = pd.DataFrame(adf4)
     adf15 = pd.DataFrame(adf5)
     df_all = pd.concat([adf11, adf12, adf13, adf14, adf15], ignore_index=True)
-    df_all = df_all[[0, 1]]
-    df_all.columns = ['text', 'label']
+    df_all = df_all[[2, 1]]
+    df_all.columns = ['text_prep', 'label']
     print(f'{per_class} reviews per class from {link} loaded')
     return df_all
 
 
 df = load_sampled(amazon_link, 5000)
-df.head()
 target = df.label
 text = df.text_prep
 
-X_train, X_test, y_train, y_test = train_test_split(text, target, test_size=0.3, random_state=123)
+X_train, X_test, y_train, y_test = train_test_split(text, target, test_size=0.3, random_state=None)
 
-count = CountVectorizer()
+tfidf = TfidfVectorizer()
+
 param_grid = [{
     'vect__max_df': [0.5, 0.75, 0.8, 0.9, 1.0],
-    'vect__min_df': [1, 2, 3, 5, 10],
+    'vect__min_df': [1, 2, 3, 5, 10, 20],
     'vect__binary': [True, False]
 }, {
-    'vect': [TfidfVectorizer()],
+    'vect': [CountVectorizer(),],
     'vect__max_df': [0.5, 0.75, 0.8, 0.9, 1.0],
     'vect__min_df': [1, 2, 3, 5, 10],
 
 }]
-
-ml_features = Pipeline([('vect', count),
-                        ('clf', )])
-
-gs_ml_features = GridSearchCV(ml_features, param_grid, scoring='f1_macro',
-                              cv=5, verbose=1, n_jobs=-1)
-gs_ml_features.fit(X_train, y_train)
-print('all results:')
-print(gs_ml_features.cv_results_)
+cv = StratifiedKFold(n_splits = 5, shuffle=False, random_state=123)
+print('######## RUN SVC')
+svc_features = Pipeline([('vect', tfidf),
+                        ('clf', SVC(C=1.0, decision_function_shape='ovo', gamma='auto', kernel='linear', random_state=123))])
+gs_svc_features = GridSearchCV(svc_features, param_grid, scoring='f1_macro', cv=cv, verbose=3, n_jobs=-1)
+gs_svc_features.fit(X_train, y_train)
 print('best parameters')
-print(gs_ml_features.best_params_)
+print(gs_svc_features.best_params_)
 print('best score')
-print(gs_ml_features.best_score_)
+print(gs_svc_features.best_score_)
+print(pd.concat([pd.DataFrame(gs_svc_features.cv_results_["params"]),pd.DataFrame(gs_svc_features.cv_results_["mean_test_score"], columns=["f1_macro"])],axis=1))
 
+
+print('######## RUN LOGISTIC REGRESSION')
+lr_features = Pipeline([('vect', tfidf),
+                        ('clf', LogisticRegression(C=10.0, multi_class='multinomial', penalty='l2', solver='saga', random_state=123))])
+
+gs_lr_features = GridSearchCV(lr_features, param_grid, scoring='f1_macro', cv=cv, verbose=3, n_jobs=-1)
+gs_lr_features.fit(X_train, y_train)
+print('best parameters')
+print(gs_lr_features.best_params_)
+print('best score')
+print(gs_lr_features.best_score_)
+print(pd.concat([pd.DataFrame(gs_lr_features.cv_results_["params"]),pd.DataFrame(gs_lr_features.cv_results_["mean_test_score"], columns=["f1_macro"])],axis=1))
+
+
+print('######## RUN SGDClassifier')
+sgd_features = Pipeline([('vect', tfidf),
+                        ('clf', SGDClassifier(alpha=0.0001, max_iter=500, penalty='l2', random_state=123, loss='hinge'))])
+
+gs_sgd_features = GridSearchCV(sgd_features, param_grid, scoring='f1_macro', cv=cv, verbose=3, n_jobs=-1)
+gs_sgd_features.fit(X_train, y_train)
+print('best parameters')
+print(gs_sgd_features.best_params_)
+print('best score')
+print(gs_sgd_features.best_score_)
+print(pd.concat([pd.DataFrame(gs_sgd_features.cv_results_["params"]),pd.DataFrame(gs_sgd_features.cv_results_["mean_test_score"], columns=["f1_macro"])],axis=1))
+
+
+print('######## RUN Multinomial Bayes with prior')
+nb_features = Pipeline([('vect', tfidf),
+                        ('clf', MultinomialNB(alpha=1.0, fit_prior=False))])
+
+gs_nb_features = GridSearchCV(nb_features, param_grid, scoring='f1_macro', cv=cv, verbose=3, n_jobs=-1)
+gs_nb_features.fit(X_train, y_train)
+print('best parameters')
+print(gs_nb_features.best_params_)
+print('best score')
+print(gs_nb_features.best_score_)
+print(pd.concat([pd.DataFrame(gs_nb_features.cv_results_["params"]),pd.DataFrame(gs_nb_features.cv_results_["mean_test_score"], columns=["f1_macro"])],axis=1))
+
+
+print('######## RUN Multinomial Bayes without prior')
+nb_features = Pipeline([('vect', tfidf),
+                        ('clf', MultinomialNB(alpha=1.0, fit_prior=False))])
+
+gs_nb_features = GridSearchCV(nb_features, param_grid, scoring='f1_macro', cv=cv, verbose=3, n_jobs=-1)
+gs_nb_features.fit(X_train, y_train)
+print('best parameters')
+print(gs_nb_features.best_params_)
+print('best score')
+print(gs_nb_features.best_score_)
+print(pd.concat([pd.DataFrame(gs_nb_features.cv_results_["params"]),pd.DataFrame(gs_nb_features.cv_results_["mean_test_score"], columns=["f1_macro"])],axis=1))
+
+
+print('######## RUN Multinomial Bayes without prior')
+nb_features = Pipeline([('vect', tfidf),
+                        ('clf', MultinomialNB(alpha=1.0, fit_prior=False))])
+
+gs_nb_features = GridSearchCV(nb_features, param_grid, scoring='f1_macro', cv=cv, verbose=3, n_jobs=-1)
+gs_nb_features.fit(X_train, y_train)
+print('best parameters')
+print(gs_nb_features.best_params_)
+print('best score')
+print(gs_nb_features.best_score_)
+print(pd.concat([pd.DataFrame(gs_nb_features.cv_results_["params"]),pd.DataFrame(gs_nb_features.cv_results_["mean_test_score"], columns=["f1_macro"])],axis=1))
+
+
+print('######## RUN SVR')
+nb_features = Pipeline([('vect', tfidf),
+                        ('clf', SVR(C=10.0, gamma='scale', kernel='rbf', ))])
+
+gs_nb_features = GridSearchCV(nb_features, param_grid, scoring='neg_mean_squared_error', cv=cv, verbose=3, n_jobs=-1)
+gs_nb_features.fit(X_train, y_train)
+print('best parameters')
+print(gs_nb_features.best_params_)
+print('best score')
+print(gs_nb_features.best_score_)
+print(pd.concat([pd.DataFrame(gs_nb_features.cv_results_["params"]),pd.DataFrame(gs_nb_features.cv_results_["mean_test_score"], columns=["f1_macro"])],axis=1))
 
