@@ -7,6 +7,8 @@ import nltk
 import pandas as pd
 from collections import Counter
 from nltk.tokenize.treebank import TreebankWordDetokenizer
+import nltk
+nltk.download()
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 # from textblob import TextBlob
