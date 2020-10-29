@@ -1,4 +1,5 @@
-
+import sys
+sys.path.append("..")
 from Scripts import loading as dl, profiling as pf, cleaning as cl, preprocessing as prep
 
 
