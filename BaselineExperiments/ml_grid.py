@@ -120,7 +120,7 @@ param_grid = [{'vect__ngram_range': [(1, 3)],
                }]
 svc_tfidf = Pipeline([('vect', tfidf),
                      ('clf', SVC())])
-gs_svc_tfidf = GridSearchCV(svc_tfidf, param_grid, scoring='f1_macro', cv=5, verbose=3, n_jobs=-1)
+gs_svc_tfidf = GridSearchCV(svc_tfidf, param_grid, scoring='f1_macro', cv=5, verbose=1, n_jobs=-1)
 gs_svc_tfidf.fit(X_train, y_train)
 print('SVC')
 print(gs_svc_tfidf.best_params_)
