@@ -9,7 +9,7 @@ from collections import Counter
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
-from textblob import TextBlob
+# from textblob import TextBlob
 from Scripts import profiling as pf
 
 
@@ -206,15 +206,15 @@ def remove_stopwords(df):
     return df
 
 
-def lemmatize_with_pos(t):
-    sent = TextBlob(t)
-    tag_dict = {"J": 'a',
-                "N": 'n',
-                "V": 'v',
-                "R": 'r'}
-    words_and_tags = [(w, tag_dict.get(pos[0], 'n')) for w, pos in sent.tags]
-    lemmatized_list = [wd.lemmatize(tag) for wd, tag in words_and_tags]
-    return " ".join(lemmatized_list)
+# def lemmatize_with_pos(t):
+#     sent = TextBlob(t)
+#     tag_dict = {"J": 'a',
+#                 "N": 'n',
+#                 "V": 'v',
+#                 "R": 'r'}
+#     words_and_tags = [(w, tag_dict.get(pos[0], 'n')) for w, pos in sent.tags]
+#     lemmatized_list = [wd.lemmatize(tag) for wd, tag in words_and_tags]
+#     return " ".join(lemmatized_list)
 
 
 def stem(df):

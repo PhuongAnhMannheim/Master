@@ -9,6 +9,7 @@ def detect_lang(row):
     else:
         print("sad:", row['text'])
 
+
 def drop_duplicates(df):
     if 'label' in df:
         df = df.drop_duplicates(subset=['text','label'], keep='last')

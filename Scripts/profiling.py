@@ -82,7 +82,7 @@ def get_missing_text(df):
     print('Missing review text as percentage: {:.2%} '.format(len(df[df.text.isnull() | (df.text == '')]) / total))
 
 
-def get_mostcommon(df):
+def get_mostcommon(df, filename):
     corpus = pd.Series(' '.join(df['text']).split())
     corpus_counts = Counter(corpus)
     mostcommon = pd.DataFrame(corpus_counts.most_common(100), columns=['Word', 'Frequency'])
@@ -95,6 +95,7 @@ def get_mostcommon(df):
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
     plt.show()
+    plt.savefig(f"../Figures/wordcloud_{filename}.png", bbox_inches='tight', dpi=300)
     return mostcommon
 
 

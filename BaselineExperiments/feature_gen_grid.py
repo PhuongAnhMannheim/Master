@@ -64,7 +64,7 @@ df.head()
 target = df.label
 text = df.text_prep
 
-X_train, X_test, y_train, y_test = train_test_split(text, target, test_size=0.3, random_state=None)
+X_train, X_test, y_train, y_test = train_test_split(text, target, test_size=0.3, random_state=123)
 
 count = CountVectorizer()
 param_grid = [{
@@ -79,7 +79,7 @@ param_grid = [{
 }]
 
 ml_features = Pipeline([('vect', count),
-                        ('clf', ???)])
+                        ('clf', )])
 
 gs_ml_features = GridSearchCV(ml_features, param_grid, scoring='f1_macro',
                               cv=5, verbose=1, n_jobs=-1)
