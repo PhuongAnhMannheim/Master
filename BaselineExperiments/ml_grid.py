@@ -70,7 +70,7 @@ X_train, X_test, y_train, y_test = train_test_split(text, target, test_size=0.3,
 
 
 tfidf = TfidfVectorizer()
-param_grid = [{'vect__ngram_range': [(1, 1)],
+param_grid = [{'vect__ngram_range': [(1, 3)],
                'clf__penalty': ['l1', 'l2'],
                'clf__C': [0.1, 1.0, 10.0],
                'clf__solver': ['newton-cg', 'sag', 'saga', 'lbfgs'],
@@ -85,7 +85,7 @@ print(gs_lr_tfidf.best_params_)
 print(gs_lr_tfidf.best_score_)
 
 
-param_grid = [{'vect__ngram_range': [(1, 1)],
+param_grid = [{'vect__ngram_range': [(1, 3)],
                'clf__alpha': [0.1, 1.0, 10.0],
                'clf__fit_prior': [True, False]
                }]
@@ -98,7 +98,7 @@ print(gs_nb_tfidf.best_params_)
 print(gs_nb_tfidf.best_score_)
 
 
-param_grid = [{'vect__ngram_range': [(1, 1)],
+param_grid = [{'vect__ngram_range': [(1, 3)],
                'clf__kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
                'clf__C': [0.1, 1.0, 10.0],
                'clf__gamma': ['auto', 'scale']
@@ -112,7 +112,7 @@ print(gs_svr_tfidf.best_params_)
 print(gs_svr_tfidf.best_score_)
 
 
-param_grid = [{'vect__ngram_range': [(1, 1)],
+param_grid = [{'vect__ngram_range': [(1, 3)],
                'clf__kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
                'clf__C': [0.1, 1.0, 10.0],
                'clf__gamma': ['auto', 'scale'],
@@ -127,7 +127,7 @@ print(gs_svc_tfidf.best_params_)
 print(gs_svc_tfidf.best_score_)
 
 
-param_grid = [{'vect__ngram_range': [(1, 1)],
+param_grid = [{'vect__ngram_range': [(1, 3)],
                'clf__penalty': ['l1', 'l2'],
                'clf__alpha': [0.1, 0.01, 0.001, 0.0001],
                'clf__max_iter': [500, 1000, 10000]
