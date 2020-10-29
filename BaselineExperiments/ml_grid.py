@@ -1,4 +1,3 @@
-
 import pandas as pd
 import random
 from sklearn.model_selection import train_test_split, GridSearchCV
@@ -64,7 +63,6 @@ def load_sampled(link, per_class):
 
 
 df = load_sampled(amazon_link, 5000)
-print(df.head())
 target = df.label
 text = df.text_prep
 
@@ -92,7 +90,7 @@ param_grid = [{'vect__ngram_range': [(1, 1)],
                }]
 nb_tfidf = Pipeline([('vect', tfidf),
                      ('clf', MultinomialNB())])
-gs_nb_tfidf = GridSearchCV(lr_tfidf, param_grid, scoring='f1_macro', cv=5, verbose=1, n_jobs=-1)
+gs_nb_tfidf = GridSearchCV(nb_tfidf, param_grid, scoring='f1_macro', cv=5, verbose=1, n_jobs=-1)
 gs_nb_tfidf.fit(X_train, y_train)
 print('MultinomialNB')
 print(gs_nb_tfidf.best_params_)
@@ -106,7 +104,7 @@ param_grid = [{'vect__ngram_range': [(1, 1)],
                }]
 svr_tfidf = Pipeline([('vect', tfidf),
                      ('clf', SVR())])
-gs_svr_tfidf = GridSearchCV(lr_tfidf, param_grid, scoring='f1_macro', cv=5, verbose=1, n_jobs=-1)
+gs_svr_tfidf = GridSearchCV(svr_tfidf, param_grid, scoring='neg_mean_squared_error', cv=5, verbose=1, n_jobs=-1)
 gs_svr_tfidf.fit(X_train, y_train)
 print('SVR')
 print(gs_svr_tfidf.best_params_)
@@ -117,11 +115,11 @@ param_grid = [{'vect__ngram_range': [(1, 1)],
                'clf__kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
                'clf__C': [0.1, 1.0, 10.0],
                'clf__gamma': ['auto', 'scale'],
-               'clf__decision_function': ['ovo', 'ovr']
+               'clf__decision_function_shape': ['ovo', 'ovr']
                }]
 svc_tfidf = Pipeline([('vect', tfidf),
                      ('clf', SVC())])
-gs_svc_tfidf = GridSearchCV(lr_tfidf, param_grid, scoring='f1_macro', cv=5, verbose=1, n_jobs=-1)
+gs_svc_tfidf = GridSearchCV(svc_tfidf, param_grid, scoring='f1_macro', cv=5, verbose=3, n_jobs=-1)
 gs_svc_tfidf.fit(X_train, y_train)
 print('SVC')
 print(gs_svc_tfidf.best_params_)
@@ -135,7 +133,7 @@ param_grid = [{'vect__ngram_range': [(1, 1)],
                }]
 sdg_tfidf = Pipeline([('vect', tfidf),
                      ('clf', SGDClassifier(loss='hinge', random_state=123))])
-gs_sdg_tfidf = GridSearchCV(lr_tfidf, param_grid, scoring='f1_macro', cv=5, verbose=1, n_jobs=-1)
+gs_sdg_tfidf = GridSearchCV(sdg_tfidf, param_grid, scoring='f1_macro', cv=5, verbose=1, n_jobs=-1)
 gs_sdg_tfidf.fit(X_train, y_train)
 print('SGDClassifier')
 print(gs_sdg_tfidf.best_params_)
