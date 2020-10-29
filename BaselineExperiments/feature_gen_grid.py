@@ -81,7 +81,7 @@ param_grid = [{
     'vect__min_df': [1, 2, 3, 5, 10],
 
 }]
-cv = StratifiedKFold(n_splits = 5, shuffle=False, random_state=123)
+cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=123)
 print('######## RUN SVC')
 svc_features = Pipeline([('vect', tfidf),
                         ('clf', SVC(C=1.0, decision_function_shape='ovo', gamma='auto', kernel='linear', random_state=123))])
