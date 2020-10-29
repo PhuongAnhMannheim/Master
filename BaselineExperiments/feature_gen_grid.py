@@ -72,11 +72,13 @@ X_train, X_test, y_train, y_test = train_test_split(text, target, test_size=0.3,
 tfidf = TfidfVectorizer()
 
 param_grid = [{
+    'vect__ngram_range': [(1, 1), (1, 2), (1,3)],
     'vect__max_df': [0.5, 0.75, 0.8, 0.9, 1.0],
     'vect__min_df': [1, 2, 3, 5, 10, 20],
     'vect__binary': [True, False]
 }, {
     'vect': [CountVectorizer(),],
+    'vect__ngram_range': [(1, 1), (1, 2), (1,3)],
     'vect__max_df': [0.5, 0.75, 0.8, 0.9, 1.0],
     'vect__min_df': [1, 2, 3, 5, 10],
 
@@ -91,7 +93,7 @@ print('best parameters')
 print(gs_svc_features.best_params_)
 print('best score')
 print(gs_svc_features.best_score_)
-print(pd.concat([pd.DataFrame(gs_svc_features.cv_results_["params"]),pd.DataFrame(gs_svc_features.cv_results_["mean_test_score"], columns=["f1_macro"])],axis=1))
+print(pd.concat([pd.DataFrame(gs_svc_features.cv_results_["params"]), pd.DataFrame(gs_svc_features.cv_results_["mean_test_score"], columns=["f1_macro"])], axis=1))
 
 
 print('######## RUN LOGISTIC REGRESSION')
