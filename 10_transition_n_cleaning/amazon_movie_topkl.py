@@ -81,15 +81,15 @@ df = df.drop_duplicates(subset=['text_prep'], keep='last')
 print("After removing duplicate preprocessed texts: ", len(df))
 
 
-print('######### LAST CHECK')
-print(df.head())
-print(df.describe(include='all'))
+# print('######### LAST CHECK')
+# print(df.head())
+# print(df.describe(include='all'))
 
 
 print('######## STORING')
-df = df[['text','label', 'text_prep', 'token_count', 'upper', 'pos']]
-df.columns=['text', 'label', 'text_prep', 'token_count', 'upper', 'pos']
-df.to_pickle('../Data/amazon_movie.pkl')
+df = df[['text', 'label', 'text_prep', 'token_count', 'upper', 'pos']]
+df.columns = ['text', 'label', 'text_prep', 'token_count', 'upper', 'pos']
+df.to_pickle('../Data/amazon_movie1.pkl')
 print('to pickle done')
 
 
