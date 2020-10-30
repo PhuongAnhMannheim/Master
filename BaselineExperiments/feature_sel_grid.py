@@ -99,5 +99,6 @@ print('best parameters')
 print(gs_svc_pipeline.best_params_)
 print('best score')
 print(gs_svc_pipeline.best_score_)
+pd.set_option("display.max_rows", None, "display.max_columns", None)
 print(pd.concat([pd.DataFrame(gs_svc_pipeline.cv_results_["params"]),pd.DataFrame(gs_svc_pipeline.cv_results_["mean_test_score"], columns=["f1_macro"])],axis=1))
 
