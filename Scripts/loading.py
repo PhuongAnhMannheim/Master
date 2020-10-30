@@ -33,99 +33,105 @@ def load_amazon_full(input_link):
 
 
 def load_merged_data(schema_link, amazon_link, schema_per_class, amazon_per_class):
-    schema_df = pd.read_pickle(schema_link)
-    schema_df_1 = schema_df[schema_df['label'] == 1.0].values.tolist()
-    schema_df_2 = schema_df[schema_df['label'] == 2.0].values.tolist()
-    schema_df_3 = schema_df[schema_df['label'] == 3.0].values.tolist()
-    schema_df_4 = schema_df[schema_df['label'] == 4.0].values.tolist()
-    schema_df_5 = schema_df[schema_df['label'] == 5.0].values.tolist()
+    if schema_per_class != 0:
+        schema_df = pd.read_pickle(schema_link)
+        schema_df_1 = schema_df[schema_df['label'] == 1.0].values.tolist()
+        schema_df_2 = schema_df[schema_df['label'] == 2.0].values.tolist()
+        schema_df_3 = schema_df[schema_df['label'] == 3.0].values.tolist()
+        schema_df_4 = schema_df[schema_df['label'] == 4.0].values.tolist()
+        schema_df_5 = schema_df[schema_df['label'] == 5.0].values.tolist()
 
-    try:
-        random.seed(123)
-        df1 = random.sample(schema_df_1, schema_per_class)
-    except ValueError:
-        random.seed(123)
-        df1 = random.choices(schema_df_1, k=schema_per_class)
-    try:
-        random.seed(123)
-        df2 = random.sample(schema_df_2, schema_per_class)
-    except ValueError:
-        random.seed(123)
-        df2 = random.choices(schema_df_2, k=schema_per_class)
-    try:
-        random.seed(123)
-        df3 = random.sample(schema_df_3, schema_per_class)
-    except ValueError:
-        random.seed(123)
-        df3 = random.choices(schema_df_3, k=schema_per_class)
-    try:
-        random.seed(123)
-        df4 = random.sample(schema_df_4, schema_per_class)
-    except ValueError:
-        random.seed(123)
-        df4 = random.choices(schema_df_4, k=schema_per_class)
-    try:
-        random.seed(123)
-        df5 = random.sample(schema_df_5, schema_per_class)
-    except ValueError:
-        random.seed(123)
-        df5 = random.choices(schema_df_5, k=schema_per_class)
-    df11 = pd.DataFrame(df1)
-    df12 = pd.DataFrame(df2)
-    df13 = pd.DataFrame(df3)
-    df14 = pd.DataFrame(df4)
-    df15 = pd.DataFrame(df5)
-    schema = pd.concat([df11, df12, df13, df14, df15])
-    schema['origin'] = 'schema'
-    schema = schema[[4, 3, 'origin']]
-    schema.columns = ['text_prep', 'label', 'origin']
+        try:
+            random.seed(123)
+            df1 = random.sample(schema_df_1, schema_per_class)
+        except ValueError:
+            random.seed(123)
+            df1 = random.choices(schema_df_1, k=schema_per_class)
+        try:
+            random.seed(123)
+            df2 = random.sample(schema_df_2, schema_per_class)
+        except ValueError:
+            random.seed(123)
+            df2 = random.choices(schema_df_2, k=schema_per_class)
+        try:
+            random.seed(123)
+            df3 = random.sample(schema_df_3, schema_per_class)
+        except ValueError:
+            random.seed(123)
+            df3 = random.choices(schema_df_3, k=schema_per_class)
+        try:
+            random.seed(123)
+            df4 = random.sample(schema_df_4, schema_per_class)
+        except ValueError:
+            random.seed(123)
+            df4 = random.choices(schema_df_4, k=schema_per_class)
+        try:
+            random.seed(123)
+            df5 = random.sample(schema_df_5, schema_per_class)
+        except ValueError:
+            random.seed(123)
+            df5 = random.choices(schema_df_5, k=schema_per_class)
+        df11 = pd.DataFrame(df1)
+        df12 = pd.DataFrame(df2)
+        df13 = pd.DataFrame(df3)
+        df14 = pd.DataFrame(df4)
+        df15 = pd.DataFrame(df5)
+        schema = pd.concat([df11, df12, df13, df14, df15])
+        schema['origin'] = 'schema'
+        schema = schema[[4, 3, 'origin']]
+        schema.columns = ['text_prep', 'label', 'origin']
+    else:
+        schema = pd.DataFrame(columns=['text_prep', 'label', 'origin'])
 
-    ama_df = pd.read_pickle(amazon_link)
-    ama_df_1 = ama_df[ama_df['label'] == 1.0].values.tolist()
-    ama_df_2 = ama_df[ama_df['label'] == 2.0].values.tolist()
-    ama_df_3 = ama_df[ama_df['label'] == 3.0].values.tolist()
-    ama_df_4 = ama_df[ama_df['label'] == 4.0].values.tolist()
-    ama_df_5 = ama_df[ama_df['label'] == 5.0].values.tolist()
+    if amazon_per_class != 0:
+        ama_df = pd.read_pickle(amazon_link)
+        ama_df_1 = ama_df[ama_df['label'] == 1.0].values.tolist()
+        ama_df_2 = ama_df[ama_df['label'] == 2.0].values.tolist()
+        ama_df_3 = ama_df[ama_df['label'] == 3.0].values.tolist()
+        ama_df_4 = ama_df[ama_df['label'] == 4.0].values.tolist()
+        ama_df_5 = ama_df[ama_df['label'] == 5.0].values.tolist()
 
-    try:
-        random.seed(123)
-        adf1 = random.sample(ama_df_1, amazon_per_class)
-    except ValueError:
-        random.seed(123)
-        adf1 = random.choices(ama_df_1, k=amazon_per_class)
-    try:
-        random.seed(123)
-        adf2 = random.sample(ama_df_2, amazon_per_class)
-    except ValueError:
-        random.seed(123)
-        adf2 = random.choices(ama_df_2, k=amazon_per_class)
-    try:
-        random.seed(123)
-        adf3 = random.sample(ama_df_3, amazon_per_class)
-    except ValueError:
-        random.seed(123)
-        adf3 = random.choices(ama_df_3, k=amazon_per_class)
-    try:
-        random.seed(123)
-        adf4 = random.sample(ama_df_4, amazon_per_class)
-    except ValueError:
-        random.seed(123)
-        adf4 = random.choices(ama_df_4, k=amazon_per_class)
-    try:
-        random.seed(123)
-        adf5 = random.sample(ama_df_5, amazon_per_class)
-    except ValueError:
-        random.seed(123)
-        adf5 = random.choices(ama_df_5, k=amazon_per_class)
-    adf11 = pd.DataFrame(adf1)
-    adf12 = pd.DataFrame(adf2)
-    adf13 = pd.DataFrame(adf3)
-    adf14 = pd.DataFrame(adf4)
-    adf15 = pd.DataFrame(adf5)
-    amazon = pd.concat([adf11, adf12, adf13, adf14, adf15])
-    amazon['origin'] = 'amazon'
-    amazon = amazon[[2, 1, 'origin']]
-    amazon.columns = ['text_prep', 'label', 'origin']
+        try:
+            random.seed(123)
+            adf1 = random.sample(ama_df_1, amazon_per_class)
+        except ValueError:
+            random.seed(123)
+            adf1 = random.choices(ama_df_1, k=amazon_per_class)
+        try:
+            random.seed(123)
+            adf2 = random.sample(ama_df_2, amazon_per_class)
+        except ValueError:
+            random.seed(123)
+            adf2 = random.choices(ama_df_2, k=amazon_per_class)
+        try:
+            random.seed(123)
+            adf3 = random.sample(ama_df_3, amazon_per_class)
+        except ValueError:
+            random.seed(123)
+            adf3 = random.choices(ama_df_3, k=amazon_per_class)
+        try:
+            random.seed(123)
+            adf4 = random.sample(ama_df_4, amazon_per_class)
+        except ValueError:
+            random.seed(123)
+            adf4 = random.choices(ama_df_4, k=amazon_per_class)
+        try:
+            random.seed(123)
+            adf5 = random.sample(ama_df_5, amazon_per_class)
+        except ValueError:
+            random.seed(123)
+            adf5 = random.choices(ama_df_5, k=amazon_per_class)
+        adf11 = pd.DataFrame(adf1)
+        adf12 = pd.DataFrame(adf2)
+        adf13 = pd.DataFrame(adf3)
+        adf14 = pd.DataFrame(adf4)
+        adf15 = pd.DataFrame(adf5)
+        amazon = pd.concat([adf11, adf12, adf13, adf14, adf15])
+        amazon['origin'] = 'amazon'
+        amazon = amazon[[2, 1, 'origin']]
+        amazon.columns = ['text_prep', 'label', 'origin']
+    else:
+        amazon = pd.DataFrame(columns=['text_prep', 'label', 'origin'])
     df_all = pd.concat([schema, amazon], ignore_index=True)
     df_all = df_all[['text_prep', 'label', 'origin']]
     return df_all

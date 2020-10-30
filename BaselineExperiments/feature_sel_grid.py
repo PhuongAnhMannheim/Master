@@ -1,10 +1,10 @@
 import pandas as pd
 import random
 from sklearn.model_selection import train_test_split, GridSearchCV, StratifiedKFold
-from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import SVC, SVR
 from sklearn.pipeline import Pipeline
-from sklearn.feature_selection import SelectKBest, chi2, f_classif, f_regression, mutual_info_classif, chi2
+from sklearn.feature_selection import SelectKBest, chi2, f_classif, f_regression, mutual_info_classif, mutual_info_regression
 
 
 amazon_link = '../Data/amazon_phone.pkl'
@@ -70,23 +70,27 @@ X_train, X_test, y_train, y_test = train_test_split(text, target, test_size=0.3,
 
 kbest = SelectKBest(f_classif)
 param_grid = [{
-    'kbest__k': [500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
+    'kbest__k': [100, 200, 300, 400, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
 }, {
     'kbest': [SelectKBest(f_regression)],
-    'kbest__k': [500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
-}, {
-    'kbest': [SelectKBest(mutual_info_classif)],
-    'kbest__k': [500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
+    'kbest__k': [100, 200, 300, 400, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
 }, {
     'kbest': [SelectKBest(chi2)],
-    'kbest__k': [500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
-}]
+    'kbest__k': [100, 200, 300, 400, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
+}, {
+    'kbest': [SelectKBest(mutual_info_classif)],
+    'kbest__k': [100, 200, 300, 400, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
+}, {
+    'kbest': [SelectKBest(mutual_info_regression)],
+    'kbest__k': [100, 200, 300, 400, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
+    }
+]
 
 cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=123)
 
 
 print('######## RUN SVC')
-svc_pipeline = Pipeline([('vect', CountVectorizer(max_df=0.75, min_df=3, ngram_range=(1, 3))),
+svc_pipeline = Pipeline([('vect',  TfidfVectorizer(binary=True, max_df=0.75, min_df=1, ngram_range=(1, 3))),
                          ('kbest', kbest),
                         ('clf', SVC(C=1.0, decision_function_shape='ovo', gamma='auto', kernel='linear', random_state=123))])
 gs_svc_pipeline = GridSearchCV(svc_pipeline, param_grid, scoring='f1_macro', cv=cv, verbose=3, n_jobs=-1)
