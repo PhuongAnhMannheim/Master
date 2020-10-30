@@ -65,7 +65,7 @@ for i in list_test:
     y_test = encoder.fit_transform(y_test)
     logging.debug("label encoding done")
 
-    # Feature 01_Extraction: Bag of Words with TF-IDF
+    # Feature 01_extraction: Bag of Words with TF-IDF
     tfidf_vect_ngram = TfidfVectorizer(analyzer='word', token_pattern=r'\w{1,}', ngram_range=(2,3), max_features=5000)
     tfidf_vect_ngram.fit(text)
     logging.debug("feature extractiion: n-grams + TF-IDF done")

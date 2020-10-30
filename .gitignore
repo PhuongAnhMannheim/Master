@@ -4,8 +4,8 @@ reviews.db
 git
 Logs
 02_Intermediary/.ipynb_checkpoints
-01_Extraction/.ipynb_checkpoints
-01_Extraction
+01_extraction/.ipynb_checkpoints
+01_extraction
 Profiling/.ipynb_checkpoints/
 wandb
 03_Scraping/debug.log

@@ -36,7 +36,7 @@ text = df['reviewText']
 
 logging.debug(f"RUN: Baseline, Cellphone, {feature}, {method}, {balance}, {preprocess}")
 
-# Feature 01_Extraction:
+# Feature 01_extraction:
 # tfidf_vect = TfidfVectorizer(analyzer='word', token_pattern=r'\w{1,}')
 # tfidf_vect.fit(text)
 # text_tfidf = tfidf_vect.transform(text)
