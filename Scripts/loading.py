@@ -5,9 +5,7 @@ import random
 import sqlite3
 
 
-def load_from_db(db_path, db_name):
-    # db_path = '../Data/phonereviews.db'
-    # db_name = 'phonereviews'
+def load_from_db(db_path, db_name):  # '../Data/phonereviews.db', 'phonereviews'
     conn = sqlite3.connect(db_path)
     df = pd.read_sql_query("SELECT * from " + str(db_name), conn)
     df = df.drop(['RATING'], axis=1)
@@ -78,6 +76,10 @@ def load_merged_data(schema_link, amazon_link, schema_per_class, amazon_per_clas
     df14 = pd.DataFrame(df4)
     df15 = pd.DataFrame(df5)
     schema = pd.concat([df11, df12, df13, df14, df15])
+    schema['origin'] = 'schema'
+    schema = schema[[4, 3, 'origin']]
+    schema.columns = ['text_prep', 'label', 'origin']
+
     ama_df = pd.read_pickle(amazon_link)
     ama_df_1 = ama_df[ama_df['label'] == 1.0].values.tolist()
     ama_df_2 = ama_df[ama_df['label'] == 2.0].values.tolist()
@@ -121,9 +123,11 @@ def load_merged_data(schema_link, amazon_link, schema_per_class, amazon_per_clas
     adf14 = pd.DataFrame(adf4)
     adf15 = pd.DataFrame(adf5)
     amazon = pd.concat([adf11, adf12, adf13, adf14, adf15])
+    amazon['origin'] = 'amazon'
+    amazon = amazon[[2, 1, 'origin']]
+    amazon.columns = ['text_prep', 'label', 'origin']
     df_all = pd.concat([schema, amazon], ignore_index=True)
-    df_all = df_all[[0,1]]
-    df_all.columns = ['text', 'label']
+    df_all = df_all[['text_prep', 'label', 'origin']]
     return df_all
 
 
