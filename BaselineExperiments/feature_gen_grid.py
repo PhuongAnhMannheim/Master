@@ -74,13 +74,13 @@ tfidf = TfidfVectorizer()
 param_grid = [{
     'vect__ngram_range': [(1, 1), (1, 2), (1,3)],
     'vect__max_df': [0.5, 0.75, 0.8, 0.9, 1.0],
-    'vect__min_df': [1, 2, 3, 5, 10, 20],
-    'vect__binary': [True, False]
+    'vect__min_df': [1, 2, 3, 5, 10, 20]
 }, {
     'vect': [CountVectorizer(),],
     'vect__ngram_range': [(1, 1), (1, 2), (1,3)],
     'vect__max_df': [0.5, 0.75, 0.8, 0.9, 1.0],
     'vect__min_df': [1, 2, 3, 5, 10],
+    'vect__binary': [True, False]
 
 }]
 cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=123)
