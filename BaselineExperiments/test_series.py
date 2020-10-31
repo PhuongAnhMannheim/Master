@@ -1,4 +1,7 @@
+import sys
+sys.path.append("..")
 from Scripts import loading as dl
+
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_selection import SelectKBest, mutual_info_classif
