@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split, GridSearchCV, StratifiedKF
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import SVC, SVR
 from sklearn.pipeline import Pipeline
-from sklearn.feature_selection import SelectKBest, chi2, f_classif, f_regression, mutual_info_classif, mutual_info_regression
+from sklearn.feature_selection import SelectKBest, chi2, f_classif, mutual_info_classif
 
 
 amazon_link = '../Data/amazon_phone.pkl'
@@ -72,18 +72,12 @@ kbest = SelectKBest(f_classif)
 param_grid = [{
     'kbest__k': [100, 200, 300, 400, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
 }, {
-    'kbest': [SelectKBest(f_regression)],
-    'kbest__k': [100, 200, 300, 400, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
-}, {
     'kbest': [SelectKBest(chi2)],
     'kbest__k': [100, 200, 300, 400, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
 }, {
     'kbest': [SelectKBest(mutual_info_classif)],
     'kbest__k': [100, 200, 300, 400, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
-}, {
-    'kbest': [SelectKBest(mutual_info_regression)],
-    'kbest__k': [100, 200, 300, 400, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
-    }
+}
 ]
 
 cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=123)
@@ -93,12 +87,12 @@ print('######## RUN SVC')
 svc_pipeline = Pipeline([('vect',  TfidfVectorizer(binary=True, max_df=0.75, min_df=1, ngram_range=(1, 3))),
                          ('kbest', kbest),
                         ('clf', SVC(C=1.0, decision_function_shape='ovo', gamma='auto', kernel='linear', random_state=123))])
-gs_svc_pipeline = GridSearchCV(svc_pipeline, param_grid, scoring='f1_macro', cv=cv, verbose=3, n_jobs=-1)
+gs_svc_pipeline = GridSearchCV(svc_pipeline, param_grid, scoring='f1_macro', cv=cv, verbose=3, n_jobs=13)
 gs_svc_pipeline.fit(X_train, y_train)
 print('best parameters')
 print(gs_svc_pipeline.best_params_)
 print('best score')
 print(gs_svc_pipeline.best_score_)
 pd.set_option("display.max_rows", None, "display.max_columns", None)
-print(pd.concat([pd.DataFrame(gs_svc_pipeline.cv_results_["params"]),pd.DataFrame(gs_svc_pipeline.cv_results_["mean_test_score"], columns=["f1_macro"])],axis=1))
+print(pd.concat([pd.DataFrame(gs_svc_pipeline.cv_results_["params"]), pd.DataFrame(gs_svc_pipeline.cv_results_["mean_test_score"], columns=["f1_macro"])],axis=1))
 
