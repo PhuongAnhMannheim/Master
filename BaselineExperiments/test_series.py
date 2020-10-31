@@ -53,7 +53,7 @@ def run(domain, trial, schema_rev_link, amazon_rev_link, schema_rev_size, amazon
                                  display_labels=[1.0, 2.0, 3.0, 4.0, 5.0],
                                  cmap=plt.cm.Blues)
     disp.ax_.set_title(title)
-    plt.savefig(f'Results/test_series/{title}.png', dpi=200)
+    plt.savefig(f'results/test_series/{title}.png', dpi=200)
 
     title_norm = title + "_normalize"
     disp_norm = plot_confusion_matrix(clf, fs_test_vectorized, y_test,
@@ -61,7 +61,7 @@ def run(domain, trial, schema_rev_link, amazon_rev_link, schema_rev_size, amazon
                                       cmap=plt.cm.Blues,
                                       normalize='true')
     disp_norm.ax_.set_title(title_norm)
-    plt.savefig(f'Results/test_series/{title_norm}.png', dpi=200)
+    plt.savefig(f'results/test_series/{title_norm}.png', dpi=200)
 
     case_1 = 0
     case_2 = 0
