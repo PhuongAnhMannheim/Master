@@ -100,7 +100,7 @@ count_trial = '1'
 limit = 1000
 schema_size = 0
 amazon_size = limit - schema_size
-domains = 'movie'
+d = 'movie'
 
 amazon_link = f'../Data/amazon_{d}.pkl'
 schema_link = f'../Data/schema_{d}.pkl'
