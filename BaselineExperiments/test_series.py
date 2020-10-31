@@ -153,7 +153,7 @@ for d in domains:
     schema_link = f'../Data/schema_{d}.pkl'
     print(f"######## {d}, test series {count_trial}")
     results = {}
-    while schema_size <= 1000:
+    while schema_size <= 10000:
         amazon_size = limit - schema_size
         result = run(d, count_trial, schema_link, amazon_link, schema_size, amazon_size)
         results[f"{d}_{count_trial}_{schema_size}_{amazon_size}"] = result
