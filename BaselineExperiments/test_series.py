@@ -16,6 +16,7 @@ def run(domain, trial, schema_rev_link, amazon_rev_link, schema_rev_size, amazon
 
     text = df.text_prep
     target = df.label
+    target = target.astype('int')
 
     seed = 7
     x_train, x_test, y_train, y_test = train_test_split(text, target, test_size=0.25, random_state=seed,
@@ -53,7 +54,7 @@ def run(domain, trial, schema_rev_link, amazon_rev_link, schema_rev_size, amazon
                                  display_labels=[1.0, 2.0, 3.0, 4.0, 5.0],
                                  cmap=plt.cm.Blues)
     disp.ax_.set_title(title)
-    plt.savefig(f'{title}.png', dpi=200)
+    plt.savefig(f'results/test_series/{title}.png', dpi=200)
 
     title_norm = title + "_normalize"
     disp_norm = plot_confusion_matrix(clf, fs_test_vectorized, y_test,
@@ -61,7 +62,7 @@ def run(domain, trial, schema_rev_link, amazon_rev_link, schema_rev_size, amazon
                                       cmap=plt.cm.Blues,
                                       normalize='true')
     disp_norm.ax_.set_title(title_norm)
-    plt.savefig(f'{title_norm}.png', dpi=200)
+    plt.savefig(f'results/test_series/{title_norm}.png', dpi=200)
 
     case_1 = 0
     case_2 = 0
