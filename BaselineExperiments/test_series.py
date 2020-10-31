@@ -95,82 +95,73 @@ def run(domain, trial, schema_rev_link, amazon_rev_link, schema_rev_size, amazon
     return f1
 
 
-print('######### test series 1')
-count_trial = '1'
-limit = 1000
-schema_size = 0
-amazon_size = limit - schema_size
-d = 'movie'
-
-amazon_link = f'../Data/amazon_{d}.pkl'
-schema_link = f'../Data/schema_{d}.pkl'
-
-print(f"######## {d}, test series {count_trial}")
-results = {}
-while schema_size <= 1000:
-    result = run(d, count_trial, schema_link, amazon_link, schema_size, amazon_size)
-    results[f"{d}_{count_trial}_{schema_size}_{amazon_size}"] = result
-
-    schema_size = schema_size + 250
-    amazon_size = limit - schema_size
-
-bigIndex = max([[results[key], key] for key in results])
-print(f'######## BEST RESULTS of trial{count_trial}_{d}')
-print(bigIndex)
+# print('######### test series 1')
+# count_trial = '1'
+# domains = ['phone', 'movie']
+# for d in domains:
+#     limit = 1000
+#     schema_size = 0
+#     amazon_link = f'../Data/amazon_{d}.pkl'
+#     schema_link = f'../Data/schema_{d}.pkl'
+#
+#     print(f"######## {d}, test series {count_trial}")
+#     results = {}
+#
+#     while schema_size <= 1000:
+#         amazon_size = limit - schema_size
+#         result = run(d, count_trial, schema_link, amazon_link, schema_size, amazon_size)
+#         results[f"{d}_{count_trial}_{schema_size}_{amazon_size}"] = result
+#
+#         schema_size = schema_size + 250
+#         amazon_size = limit - schema_size
+#
+#     bigIndex = max([[results[key], key] for key in results])
+#     print(f'######## BEST RESULTS of trial{count_trial}_{d}')
+#     print(bigIndex)
 
 
 print('######### test series 2')
 count_trial = '2'
-limit = 2000
-schema_size = 1000
-amazon_size = limit - schema_size
 domains = ['phone', 'movie']
 for d in domains:
+    limit = 2000
+    schema_size = 1000
     amazon_link = f'../Data/amazon_{d}.pkl'
     schema_link = f'../Data/schema_{d}.pkl'
     print(f"######## {d}, test series {count_trial}")
     results = {}
-    while schema_size < 2000:
+
+    while schema_size >= 0:
+        amazon_size = limit - schema_size
         result = run(d, count_trial, schema_link, amazon_link, schema_size, amazon_size)
         results[f"{d}_{count_trial}_{schema_size}_{amazon_size}"] = result
-
-        schema_size = schema_size + 200
-        amazon_size = limit - schema_size
+        schema_size = schema_size - 200
 
     bigIndex = max([[results[key], key] for key in results])
     print(f'######## BEST RESULTS of trial{count_trial}_{d}')
     print(bigIndex)
 
-    limit = 2000
-    schema_size = 1000
-    amazon_size = limit - schema_size
-
 
 print('######### test series 3')
 count_trial = '3'
-limit = 10000
-schema_size = 0
-amazon_size = limit - schema_size
+
 domains = ['phone', 'movie']
 for d in domains:
+    limit = 10000
+    schema_size = 0
     amazon_link = f'../Data/amazon_{d}.pkl'
     schema_link = f'../Data/schema_{d}.pkl'
     print(f"######## {d}, test series {count_trial}")
     results = {}
     while schema_size <= 1000:
+        amazon_size = limit - schema_size
         result = run(d, count_trial, schema_link, amazon_link, schema_size, amazon_size)
         results[f"{d}_{count_trial}_{schema_size}_{amazon_size}"] = result
-
         schema_size = schema_size + 100
-        amazon_size = limit - schema_size
 
     bigIndex = max([[results[key], key] for key in results])
     print(f'######## BEST RESULTS of trial{count_trial}_{d}')
     print(bigIndex)
-
-    limit = 10000
-    schema_size = 0
-    amazon_size = limit - schema_size
 
 
 print('######### test series 4')
