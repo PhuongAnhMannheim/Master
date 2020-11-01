@@ -4,7 +4,7 @@ from Scripts import loading as dl
 
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.feature_selection import SelectKBest, mutual_info_classif
+from sklearn.feature_selection import SelectKBest, chi2
 from sklearn.svm import SVC
 from sklearn import metrics
 from sklearn.metrics import plot_confusion_matrix, classification_report
@@ -28,8 +28,7 @@ def run(domain, trial, schema_rev_link, amazon_rev_link, schema_rev_size, amazon
 
     test_vectorized = vect.transform(x_test)
 
-    # ToDo: adjust the SelectKBest
-    vectorizer_fs = SelectKBest(score_func=mutual_info_classif, k=5000)
+    vectorizer_fs = SelectKBest(score_func=chi2, k=4000)
     fs_train_vectorized = vectorizer_fs.fit_transform(train_vectorized, y_train)
     fs_test_vectorized = vectorizer_fs.transform(test_vectorized)
 
@@ -54,7 +53,7 @@ def run(domain, trial, schema_rev_link, amazon_rev_link, schema_rev_size, amazon
                                  display_labels=[1.0, 2.0, 3.0, 4.0, 5.0],
                                  cmap=plt.cm.Blues)
     disp.ax_.set_title(title)
-    plt.savefig(f'results/test_series/{title}.png', dpi=200)
+    plt.savefig(f'results/test_series_chi/{title}.png', dpi=200)
 
     title_norm = title + "_normalize"
     disp_norm = plot_confusion_matrix(clf, fs_test_vectorized, y_test,
@@ -62,7 +61,7 @@ def run(domain, trial, schema_rev_link, amazon_rev_link, schema_rev_size, amazon
                                       cmap=plt.cm.Blues,
                                       normalize='true')
     disp_norm.ax_.set_title(title_norm)
-    plt.savefig(f'results/test_series/{title_norm}.png', dpi=200)
+    plt.savefig(f'results/test_series_chi/{title_norm}.png', dpi=200)
 
     case_1 = 0
     case_2 = 0
@@ -95,29 +94,29 @@ def run(domain, trial, schema_rev_link, amazon_rev_link, schema_rev_size, amazon
     return f1
 
 
-# print('######### test series 1')
-# count_trial = '1'
-# domains = ['phone', 'movie']
-# for d in domains:
-#     limit = 1000
-#     schema_size = 0
-#     amazon_link = f'../Data/amazon_{d}.pkl'
-#     schema_link = f'../Data/schema_{d}.pkl'
-#
-#     print(f"######## {d}, test series {count_trial}")
-#     results = {}
-#
-#     while schema_size <= 1000:
-#         amazon_size = limit - schema_size
-#         result = run(d, count_trial, schema_link, amazon_link, schema_size, amazon_size)
-#         results[f"{d}_{count_trial}_{schema_size}_{amazon_size}"] = result
-#
-#         schema_size = schema_size + 250
-#         amazon_size = limit - schema_size
-#
-#     bigIndex = max([[results[key], key] for key in results])
-#     print(f'######## BEST RESULTS of trial{count_trial}_{d}')
-#     print(bigIndex)
+print('######### test series 1')
+count_trial = '1'
+domains = ['phone', 'movie']
+for d in domains:
+    limit = 1000
+    schema_size = 0
+    amazon_link = f'../Data/amazon_{d}.pkl'
+    schema_link = f'../Data/schema_{d}.pkl'
+
+    print(f"######## {d}, test series {count_trial}")
+    results = {}
+
+    while schema_size <= 1000:
+        amazon_size = limit - schema_size
+        result = run(d, count_trial, schema_link, amazon_link, schema_size, amazon_size)
+        results[f"{d}_{count_trial}_{schema_size}_{amazon_size}"] = result
+
+        schema_size = schema_size + 250
+        amazon_size = limit - schema_size
+
+    bigIndex = max([[results[key], key] for key in results])
+    print(f'######## BEST RESULTS of trial{count_trial}_{d}')
+    print(bigIndex)
 
 
 print('######### test series 2')
