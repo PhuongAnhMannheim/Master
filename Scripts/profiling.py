@@ -8,6 +8,7 @@ from Scripts import preprocessing as prep
 from collections import Counter
 from wordcloud import WordCloud
 from urllib.parse import urlparse
+import math
 
 
 def check_empty_text(df):
@@ -25,6 +26,7 @@ def checkmisrat(row):
 def create_word_count(df):
     try:
         df['word_count'] = df.text.apply(lambda x: len(str(x).split(" ")))
+        df['prep_word_count'] = df.text_prep.apply(lambda x: len(str(x).split(" ")))
     except:
         df['word_count'] = df.REVIEWBODY.apply(lambda x: len(str(x).split(" ")))
     return df
@@ -95,7 +97,7 @@ def get_mostcommon(df, filename):
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
     plt.show()
-    plt.savefig(f"../Figures/wordcloud_{filename}.png", bbox_inches='tight', dpi=300)
+    plt.savefig(f"../figures/wordcloud_{filename}.png", bbox_inches='tight', dpi=300)
     return mostcommon
 
 
@@ -193,7 +195,7 @@ def show_lang_dist(df, filename, title, eng):
     plt.ylabel('Number of reviews')
     plt.title(f'{title}')
     plt.rcParams.update({"figure.facecolor": "white"})
-    fig.savefig(f"../Figures/{filename}.png", bbox_inches='tight', dpi=300)
+    fig.savefig(f"../figures/{filename}.png", bbox_inches='tight', dpi=300)
     plt.show()
 
 
@@ -206,24 +208,32 @@ def show_rating_dist(df, filename, title):
     plt.rcParams['figure.facecolor'] = 'white'
     plt.xlabel('Class')
     plt.ylabel('Amount')
-    plt.title(f'Rating distribution ({title})')
+    plt.title(f'Rating Distribution ({title})')
     # plt.tight_layout()
     plt.hist(df.label, bins=np.arange(0.5, 6.0), rwidth=0.5)
-    plt.savefig(f'../Figures/{filename}.png', dpi=300)
+    plt.savefig(f'../figures/{filename}.png', dpi=300)
     plt.show()
 
 
 def show_word_length_dist(df, filename, dataname, log):
     # e.g. amazon_cell_textlength_raw_logarithmic, Amazon Movies & TV, true
 
+    text_limit = max(df.word_count)
+    new_limit = (math.ceil(text_limit/100)) * 100
     plt.rcParams['figure.facecolor'] = 'white'
-    plt.hist(df['word_count'].value_counts().sort_index(), range=(0, 6000), bins=100, log=log)
+    # plt.hist(df['word_count'].value_counts().sort_index(), range=(0, text_limit + 1), bins=100, log=log)
+    plt.hist(df['word_count'].value_counts().sort_index(), bins=5000, range=(1, text_limit), log=log, label='original')
+    plt.hist(df['prep_word_count'].value_counts().sort_index(), bins=5000, range=(1, text_limit), log=log, label='preprocessed')
+    plt.legend(loc='upper right')
     plt.xlabel('Text length')
     plt.ylabel('Distribution')
-    plt.title(f'Text lengths in words ({dataname})')
-    plt.savefig(f'../Figures/{filename}.png', dpi=300)
+    plt.title(f'Text Lengths in Words ({dataname})_combined')
+    plt.savefig(f'../figures/{filename}.png', dpi=300)
     print('Description of word length:')
+    print('Before preprocessing')
     print(df['word_count'].describe())
+    print('After preprocessing')
+    print(df['prep_word_count'].describe())
     plt.show()
 
 

@@ -36,7 +36,7 @@ def proceed_data_completion(df):
 
 def remove_duplicates(df):
     print('Before deleting duplicate entries: ', len(df))
-    df.drop_duplicates(inplace=False)
+    df.drop_duplicates(subset=['text', 'label'])
     print('After deleting duplicate entries: ', len(df))
     return df
 
