@@ -85,7 +85,7 @@ def get_missing_text(df):
 
 
 def get_mostcommon(df, filename):
-    corpus = pd.Series(' '.join(df['text']).split())
+    corpus = pd.Series(' '.join(df['text_prep']).split())
     corpus_counts = Counter(corpus)
     mostcommon = pd.DataFrame(corpus_counts.most_common(100), columns=['Word', 'Frequency'])
     print('######## Most Frequent Word Stems')
@@ -218,12 +218,11 @@ def show_rating_dist(df, filename, title):
 def show_word_length_dist(df, filename, dataname, log):
     # e.g. amazon_cell_textlength_raw_logarithmic, Amazon Movies & TV, true
 
-    text_limit = max(df.word_count)
-    new_limit = (math.ceil(text_limit/100)) * 100
+    text_limit_1 = max(df.word_count)
+    text_limit_2 = max(df.prep_word_count)
     plt.rcParams['figure.facecolor'] = 'white'
-    # plt.hist(df['word_count'].value_counts().sort_index(), range=(0, text_limit + 1), bins=100, log=log)
-    plt.hist(df['word_count'].value_counts().sort_index(), bins=5000, range=(1, text_limit), log=log, label='original')
-    plt.hist(df['prep_word_count'].value_counts().sort_index(), bins=5000, range=(1, text_limit), log=log, label='preprocessed')
+    plt.hist(df['word_count'].value_counts().sort_index(), bins=200, range=(1, text_limit_1), log=log, label='original')
+    plt.hist(df['prep_word_count'].value_counts().sort_index(), bins=200, range=(1, text_limit_2), log=log, label='preprocessed')
     plt.legend(loc='upper right')
     plt.xlabel('Text length')
     plt.ylabel('Distribution')
