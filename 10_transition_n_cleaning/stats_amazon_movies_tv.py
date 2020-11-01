@@ -3,7 +3,7 @@ sys.path.append("..")
 import pandas as pd
 from Scripts import profiling as pf, cleaning as cl
 
-df = pd.read_pickle('../Data/amazon_movie1.pkl')
+df = pd.read_pickle('../Data/amazon_movie.pkl')
 print('Data loaded')
 print('######## Tail: ')
 print(df.tail())
