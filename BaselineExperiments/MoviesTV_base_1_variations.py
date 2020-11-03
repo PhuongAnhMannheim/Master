@@ -10,7 +10,7 @@ from sklearn.metrics import plot_confusion_matrix
 import matplotlib.pyplot as plt
 
 input_file = '../Data/reviews_Movies_and_TV_5.json.gz'
-log = '../Logs/moviesbase1.log'
+log = '../logs/moviesbase1.log'
 
 method = "MultinomialNB"
 feature = "CountVectorizer(uni, bi, tri)"

@@ -1,5 +1,4 @@
-import pandas as pd
-import random
+from Scripts import loading as dl
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
@@ -10,7 +9,6 @@ from sklearn.svm import SVC, SVR
 amazon_link = '../Data/amazon_phone.pkl'
 
 
-from Scripts import loading as dl
 df = dl.load_sampled(amazon_link, 5000)
 target = df.label
 text = df.text_prep

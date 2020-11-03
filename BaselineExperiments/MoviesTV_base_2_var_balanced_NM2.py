@@ -8,7 +8,7 @@ from imblearn.under_sampling import NearMiss
 
 # Input
 input_file = '../Data/reviews_Movies_and_TV_5.json.gz'
-log_file = '../Logs/moviesbase2_bal.log'
+log_file = '../logs/moviesbase2_bal.log'
 
 # Enable logging
 logger = logging.getLogger()

@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 # Input
 input_file = '../Data/reviews_Cell_Phones_and_Accessories_5.json.gz'
-log_file = '../Logs/cellphonebase2_bal.log'
+log_file = '../logs/cellphonebase2_bal.log'
 
 method = "SVC"
 feature = "CountVectorizer(uni, bi, tri)"

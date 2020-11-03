@@ -12,7 +12,7 @@ current_reviews = set(line.strip() for line in open(already_file))
 # Output
 db_path = '../Data/moviereviews.db'
 db_name = 'moviereviews'
-log_path = '../Logs/movieReviews.log'
+log_path = '../logs/movieReviews.log'
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
 

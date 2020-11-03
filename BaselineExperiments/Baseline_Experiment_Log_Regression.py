@@ -7,7 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import json
 
 logger = logging.getLogger()
-fhandler = logging.FileHandler(filename='../Logs/movielogRegression.log', mode='a')
+fhandler = logging.FileHandler(filename='../logs/movielogRegression.log', mode='a')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 fhandler.setFormatter(formatter)
 logger.addHandler(fhandler)

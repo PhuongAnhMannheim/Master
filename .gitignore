@@ -2,18 +2,18 @@ Data
 venv
 reviews.db
 git
-Logs
+logs
 02_Intermediary/.ipynb_checkpoints
 01_extraction/.ipynb_checkpoints
 01_extraction
 Profiling/.ipynb_checkpoints/
 wandb
-03_Scraping/debug.log
-03_Scraping/geckodriver.log
-03_Scraping/result.txt
+03_scraping/debug.log
+03_scraping/geckodriver.log
+03_scraping/result.txt
 Results
 .ipynb_checkpoints
-Figures
+figures
 
 
 # Created by https://www.gitignore.io/api/python,intellij+all

@@ -7,13 +7,13 @@ import sqlite3
 import logging
 
 # Input
-current_file = '../03_Scraping/already_links_in/techadvisor.txt'
+current_file = '/already_links_in/techadvisor.txt'
 current_reviews = set(line.strip() for line in open(current_file))
 
 #  Output
 db_path = '../Data/phonereviews.db'
 db_name = 'phonereviews'
-log_path = '../Logs/phoneReviews.log'
+log_path = '../logs/phoneReviews.log'
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
 

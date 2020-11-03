@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 # Input
 input = '../Data/reviews_Cell_Phones_and_Accessories_5.json.gz'
-log = '../Logs/cellphonebase1_bal.log'
+log = '../logs/cellphonebase1_bal.log'
 
 method = "MultinomialNB"
 feature = "CountVectorizer"

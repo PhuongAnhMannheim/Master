@@ -6,7 +6,7 @@ import string
 import sqlite3
 import logging
 
-log_path = '../Logs/movieReviews.log'
+log_path = '../logs/movieReviews.log'
 db_path = '../Data/moviereviews.db'
 db_name = 'moviereviews'
 conn = sqlite3.connect(db_path)

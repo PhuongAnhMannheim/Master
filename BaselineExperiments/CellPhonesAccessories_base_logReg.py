@@ -11,7 +11,7 @@ from collections import Counter
 
 # Input
 input_file = '../Data/reviews_Cell_Phones_and_Accessories_5.json.gz'
-log = '../Logs/cellphonebase1_bal.log'
+log = '../logs/cellphonebase1_bal.log'
 
 method = "LogisticRegression"
 feature = "CountVectorizer(uni, bi, tri)"

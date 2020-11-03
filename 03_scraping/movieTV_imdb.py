@@ -26,7 +26,7 @@ import re
 db_path = '../Data/moviereviews.db'
 
 # Output
-log_path = '../Logs/movieReviews.log'
+log_path = '../logs/movieReviews.log'
 
 logger = logging.getLogger()
 fhandler = logging.FileHandler(filename=log_path, mode='a')
